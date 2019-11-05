@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c41dd2dd3485c0a4ca0db33ea7ac2dce, type: 3}
+  m_Name: ProjectileBouncingBullet
+  m_EditorClassIdentifier: 
+  avatarIcon: {fileID: 0}
+  entityDataManager: {fileID: 0}
+  entityId: 0
+  engineEventManager: {fileID: 0}
+  engineValueManager: {fileID: 0}
+  engineValueSelections: []
+  spawnUI: 0
+  UIToSpawn: {fileID: 0}
+  childOptions: 0
+  syncValuesToUI: 0
+  entitySyncType: 0
+  entityLayoutSyncs: []
+  connectedPrefab: {fileID: 1394969629413380, guid: 827734c20e7a490408343af59621f03d,
+    type: 3}
+  keepUIActiveIfDropped: 0
+  setOwnerAsParent: 0
+  weight: 0
+  droppable: 0
+  droppedPrefab: {fileID: 0}
+  quickMenuCompatible: 0
+  particleFX: {fileID: 0}
+  animState: 
+  buffs: []
+  locationData: {fileID: 11400000, guid: fcd6cf54689f2664f9ccd93a05a53c7f, type: 2}
+  defaultSpawnLocation:
+    stringValue: AmmoPouche
+    indexValue: 1
+    stringValues:
+    - RightHand
+    - AmmoPouche
+  launchFX: []
+  steerable: 0
+  horSpeed: 1
+  verSpeed: 1
+  destroySelfType: 0
+  hitMaxAmount: 1
+  impactType: 0
+  time: 0
+  triggerType: 0
+  velocity: 0
+  spawnOnImpact: []
+  impactFX: []
+  enableRicochet: 1
+  cornerDetectRadius: 0.5
+  doImpactOnRicochet: 0
+  bounceAngleType: 0

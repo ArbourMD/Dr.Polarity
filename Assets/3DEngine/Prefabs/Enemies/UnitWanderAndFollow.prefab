@@ -1,0 +1,733 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3470528444608307846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3470528444608307961}
+  - component: {fileID: 3470528444608307960}
+  - component: {fileID: 3470528444608307847}
+  m_Layer: 0
+  m_Name: MeshSkin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3470528444608307961
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3470528444608307846}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3470528445652640209}
+  m_Father: {fileID: 3470528444888811258}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &3470528444608307960
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3470528444608307846}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &3470528444608307847
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3470528444608307846}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &3470528444888811139
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3470528444888811258}
+  - component: {fileID: 3470528444888811257}
+  - component: {fileID: 3470528444888811256}
+  - component: {fileID: 3470528444888811143}
+  - component: {fileID: 3470528444888811142}
+  - component: {fileID: 3470528444888811141}
+  - component: {fileID: 3470528444888811140}
+  m_Layer: 0
+  m_Name: UnitWanderAndFollow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3470528444888811258
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3470528444888811139}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5, y: 1, z: 4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3470528444608307961}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &3470528444888811257
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3470528444888811139}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!136 &3470528444888811256
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3470528444888811139}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!195 &3470528444888811143
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3470528444888811139}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 100
+  avoidancePriority: 50
+  m_AngularSpeed: 1000
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &3470528444888811142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3470528444888811139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a95e101a7cd417242909eba5170e11e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: d5d0a18ff002b734e8abc2dad867e39e, type: 2}
+  spawnUI: 2
+  UIToSpawn: {fileID: 0}
+  parentUIToUnit: 0
+  attackTarget: {fileID: 3470528444608307961}
+  skinOptions: 2
+  spawnSkinOverride: {fileID: 0}
+  childSkinOverride: {fileID: 3470528444608307846}
+  spawnLocationData: {fileID: 11400000, guid: fcd6cf54689f2664f9ccd93a05a53c7f, type: 2}
+  spawnLocations:
+  - overridePropertyName: RightHand
+    overrideParent: 1
+    parent: {fileID: 3470528444608307846}
+    stringValue: SpawnLocation
+    indexValue: 1
+  - overridePropertyName: AmmoPouche
+    overrideParent: 1
+    parent: {fileID: 3470528444608307846}
+    stringValue: SpawnLocation
+    indexValue: 1
+--- !u!114 &3470528444888811141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3470528444888811139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8b7db05aa6ba1345a730af4efb5e59e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerType: 2
+  moveForceType: 0
+  agent: {fileID: 3470528444888811143}
+  defaultMovement: 2
+  curMovementState: 0
+  target: {fileID: 0}
+  doDefaultMovementIfNoTargets: 0
+  entityDataManager: {fileID: 0}
+  chasePriorities: []
+  fleePriorities: []
+  lookAtPriorities: []
+  patrolType: 0
+  patrolDatas: []
+  patrolPoints: []
+  wanderRadius: 3.73
+  minNextDistance: 1
+  resetWanderCenterOnReset: 1
+  chaseIntervalCheckTime: 0.3
+  fleeIntervalCheckTime: 1
+  fleeSearchDistance: 10
+  arrivalDistance: 0.1
+  arrivalTime: 0
+  stuckCheckTime: 5
+  rotSensitivity: 5
+  ignoreLeanRotation: 1
+  enableClimbing: 1
+  climbingDetect: 0
+  climbSpeed: 6
+  climbing: 0
+  inAirControlTime: 1
+  addedGravityType: 0
+  forceAmount: 0
+  forceDirection: {x: 0, y: -1, z: 0}
+  useCharacterControllerGroundDetection: 0
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 256
+  platformMask:
+    serializedVersion: 2
+    m_Bits: 65536
+  groundBoxSize: {x: 0.7, y: 0.15, z: 0.7}
+  groundBoxCenter: {x: 0, y: 0, z: 0}
+  sideMask:
+    serializedVersion: 2
+    m_Bits: 0
+  sideDetectCenter: {x: 0, y: 0, z: 0}
+  idleDetectRadius: 0.3
+  movingDetectRadius: 0.3
+  sideDetectHeight: 0.6
+  sideDetectDistanceMultiplier: 0.6
+  slowMask:
+    serializedVersion: 2
+    m_Bits: 0
+  slowMultiplier: 0.1
+  ladderLayer:
+    indexValue: 0
+    stringValue: Default
+    maskValue:
+      serializedVersion: 2
+      m_Bits: 1
+  baseSpeed: 1
+  enableJump: 1
+--- !u!114 &3470528444888811140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3470528444888811139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1f90ba81799e9e4797a4282afc748d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType: 0
+  detectZones:
+  - zoneName: PlayerDetect
+    overrideZoneName: 0
+    overrideLabel: 0
+    overrideDetectMask: 0
+    detectMask:
+      serializedVersion: 2
+      m_Bits: 2048
+    ignoreTriggerColliders: 1
+    overrideDetectType: 0
+    detectType: 0
+    colliderToUse: {fileID: 0}
+    overridePositionType: 0
+    positionType: 0
+    trans: {fileID: 0}
+    worldPos: {x: 0, y: 0, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    size: {x: 0, y: 0, z: 0}
+    useTransformAngle: 0
+    angle: {x: 0, y: 0, z: 0}
+    radius: 9.96
+    height: 0
+    overrideColor: 0
+    debugColor: {r: 1, g: 0.46219245, b: 0, a: 1}
+    handlePoint: {x: 0, y: 0, z: 0}
+  - zoneName: AttackRange
+    overrideZoneName: 0
+    overrideLabel: 0
+    overrideDetectMask: 0
+    detectMask:
+      serializedVersion: 2
+      m_Bits: 2048
+    ignoreTriggerColliders: 1
+    overrideDetectType: 0
+    detectType: 0
+    colliderToUse: {fileID: 0}
+    overridePositionType: 0
+    positionType: 0
+    trans: {fileID: 0}
+    worldPos: {x: 0, y: 0, z: 0}
+    offset: {x: 0, y: 0, z: 0}
+    size: {x: 0, y: 0, z: 0}
+    useTransformAngle: 0
+    angle: {x: 0, y: 0, z: 0}
+    radius: 2
+    height: 0
+    overrideColor: 0
+    debugColor: {r: 1, g: 0, b: 0.052129745, a: 1}
+    handlePoint: {x: 0, y: 0, z: 0}
+  preTriggers: []
+  triggers:
+  - triggerName: Trigger 0 | PlayerDetect | OnStay
+    triggerType: 1
+    detectZoneInd: 0
+    onStayOption: 0
+    repeatDelay: 0
+    input:
+      stringValue: 
+      indexValue: 0
+    validationMask: 26
+    validationLayer:
+      serializedVersion: 2
+      m_Bits: 0
+    validationTag:
+      stringValue: Player
+    engineValueDataManager: {fileID: 0}
+    selection:
+      selectionName: 
+      category:
+        stringValue: 
+        indexValue: 0
+        stringValues: []
+      engineValue:
+        stringValue: 
+        indexValue: 0
+        stringValues: []
+      valueData: {fileID: 0}
+    valueOption: 0
+    comparedValue: 0
+    angle: 270
+    obstacleLayer:
+      serializedVersion: 2
+      m_Bits: 256
+    eyesOffset: {x: 0, y: 1.8, z: 0}
+    lookLocationOffset: {x: 0, y: 1.8, z: 0}
+    activationAmount: 0
+    maxActivations: 0
+    activationType: 0
+    engineEvents:
+    - eventName: Event 1
+      sceneObject:
+        sceneObjectType: 2
+        overrideGameObject: {fileID: 0}
+        closestTag: 
+        nameToFind: 
+      startType: 0
+      inputButton:
+        stringValue: 
+        indexValue: 0
+      eventTypeMask: 64
+      commons: []
+      anims: []
+      methods: []
+      interacts:
+      - optionName: 
+        affectedObj: 0
+        overrideObject: {fileID: 3470528444888811139}
+        interactFX: {fileID: 11400000, guid: 3a65400144e6f404582a74c6eeccf962, type: 2}
+      eventOptions: []
+      valueDeltaOptions: []
+      controllerOptions:
+      - optionName: 'Set Target: Chase | Add'
+        affectedObj: 0
+        overrideObject: {fileID: 0}
+        affectController: 0
+        state: 0
+        targetType: 0
+        implementType: 0
+      - optionName: 'Set State: Chase'
+        affectedObj: 0
+        overrideObject: {fileID: 0}
+        affectController: 1
+        state: 4
+        targetType: 0
+        implementType: 0
+      detectZoneInd: 0
+      delay: 0
+      repeat: 0
+      repeatTime: 0
+      finishType: 0
+      totalTime: 0
+      active: 0
+      finished: 0
+    receivers: []
+    receiverIndMask: 0
+  - triggerName: Trigger 1 | PlayerDetect | OnExit
+    triggerType: 2
+    detectZoneInd: 0
+    onStayOption: 0
+    repeatDelay: 0
+    input:
+      stringValue: 
+      indexValue: 0
+    validationMask: 0
+    validationLayer:
+      serializedVersion: 2
+      m_Bits: 0
+    validationTag:
+      stringValue: Player
+    engineValueDataManager: {fileID: 0}
+    selection:
+      selectionName: 
+      category:
+        stringValue: 
+        indexValue: 0
+        stringValues: []
+      engineValue:
+        stringValue: 
+        indexValue: 0
+        stringValues: []
+      valueData: {fileID: 0}
+    valueOption: 0
+    comparedValue: 0
+    angle: 0
+    obstacleLayer:
+      serializedVersion: 2
+      m_Bits: 0
+    eyesOffset: {x: 0, y: 0, z: 0}
+    lookLocationOffset: {x: 0, y: 0, z: 0}
+    activationAmount: 0
+    maxActivations: 0
+    activationType: 0
+    engineEvents:
+    - eventName: Event 1
+      sceneObject:
+        sceneObjectType: 2
+        overrideGameObject: {fileID: 0}
+        closestTag: 
+        nameToFind: 
+      startType: 0
+      inputButton:
+        stringValue: 
+        indexValue: 0
+      eventTypeMask: 64
+      commons: []
+      anims: []
+      methods: []
+      interacts: []
+      eventOptions: []
+      valueDeltaOptions: []
+      controllerOptions:
+      - optionName: 'Set Target: Chase | Remove'
+        affectedObj: 0
+        overrideObject: {fileID: 0}
+        affectController: 0
+        state: 0
+        targetType: 0
+        implementType: 1
+      detectZoneInd: 0
+      delay: 0
+      repeat: 0
+      repeatTime: 0
+      finishType: 0
+      totalTime: 0
+      active: 0
+      finished: 0
+    receivers: []
+    receiverIndMask: 0
+  - triggerName: 'Trigger 2 | 1: AttackRange | OnEnter'
+    triggerType: 0
+    detectZoneInd: 1
+    onStayOption: 0
+    repeatDelay: 0
+    input:
+      stringValue: 
+      indexValue: 0
+    validationMask: 0
+    validationLayer:
+      serializedVersion: 2
+      m_Bits: 0
+    validationTag:
+      stringValue: Player
+    engineValueDataManager: {fileID: 0}
+    selection:
+      selectionName: 
+      category:
+        stringValue: 
+        indexValue: 0
+        stringValues: []
+      engineValue:
+        stringValue: 
+        indexValue: 0
+        stringValues: []
+      valueData: {fileID: 0}
+    valueOption: 0
+    comparedValue: 0
+    angle: 0
+    obstacleLayer:
+      serializedVersion: 2
+      m_Bits: 0
+    eyesOffset: {x: 0, y: 0, z: 0}
+    lookLocationOffset: {x: 0, y: 0, z: 0}
+    activationAmount: 0
+    maxActivations: 0
+    activationType: 0
+    engineEvents:
+    - eventName: Event 1
+      sceneObject:
+        sceneObjectType: 2
+        overrideGameObject: {fileID: 0}
+        closestTag: 
+        nameToFind: 
+      startType: 0
+      inputButton:
+        stringValue: 
+        indexValue: 0
+      eventTypeMask: 96
+      commons: []
+      anims: []
+      methods: []
+      interacts: []
+      eventOptions:
+      - optionName: 
+        affectedObj: 0
+        overrideObject: {fileID: 0}
+        receiver:
+          manager: {fileID: 3470528444888811140}
+          broadcastType: 1
+          triggerBroadcastType: 1
+          triggerOption: 2
+          triggerSingle:
+            stringValue: Trigger 0 | PlayerDetect | OnStay
+            indexValue: 0
+            stringValues: []
+          triggerMask: 0
+          preTrigger:
+            stringValue: 
+            indexValue: 0
+            stringValues: []
+          preTriggerBroadcastType: 0
+          eventInd:
+            stringValue: Event 1
+            indexValue: 0
+            stringValues: []
+          eventOption: 1
+      valueDeltaOptions: []
+      controllerOptions:
+      - optionName: 'Set Target: LookAt | Add'
+        affectedObj: 0
+        overrideObject: {fileID: 0}
+        affectController: 0
+        state: 0
+        targetType: 2
+        implementType: 0
+      - optionName: 'Set State: LookAt'
+        affectedObj: 0
+        overrideObject: {fileID: 0}
+        affectController: 1
+        state: 3
+        targetType: 2
+        implementType: 0
+      detectZoneInd: 0
+      delay: 0
+      repeat: 0
+      repeatTime: 0
+      finishType: 0
+      totalTime: 0
+      active: 0
+      finished: 0
+    receivers: []
+    receiverIndMask: 0
+  - triggerName: 'Trigger 3 | 1: AttackRange | OnExit'
+    triggerType: 2
+    detectZoneInd: 1
+    onStayOption: 0
+    repeatDelay: 0
+    input:
+      stringValue: 
+      indexValue: 0
+    validationMask: 0
+    validationLayer:
+      serializedVersion: 2
+      m_Bits: 0
+    validationTag:
+      stringValue: Player
+    engineValueDataManager: {fileID: 0}
+    selection:
+      selectionName: 
+      category:
+        stringValue: 
+        indexValue: 0
+        stringValues: []
+      engineValue:
+        stringValue: 
+        indexValue: 0
+        stringValues: []
+      valueData: {fileID: 0}
+    valueOption: 0
+    comparedValue: 0
+    angle: 0
+    obstacleLayer:
+      serializedVersion: 2
+      m_Bits: 0
+    eyesOffset: {x: 0, y: 0, z: 0}
+    lookLocationOffset: {x: 0, y: 0, z: 0}
+    activationAmount: 0
+    maxActivations: 0
+    activationType: 0
+    engineEvents:
+    - eventName: Event 1
+      sceneObject:
+        sceneObjectType: 2
+        overrideGameObject: {fileID: 0}
+        closestTag: 
+        nameToFind: 
+      startType: 0
+      inputButton:
+        stringValue: 
+        indexValue: 0
+      eventTypeMask: 96
+      commons: []
+      anims: []
+      methods: []
+      interacts: []
+      eventOptions:
+      - optionName: 
+        affectedObj: 0
+        overrideObject: {fileID: 0}
+        receiver:
+          manager: {fileID: 3470528444888811140}
+          broadcastType: 1
+          triggerBroadcastType: 1
+          triggerOption: 1
+          triggerSingle:
+            stringValue: '0: Trigger 0 | PlayerDetect | OnStay'
+            indexValue: 0
+            stringValues: []
+          triggerMask: 0
+          preTrigger:
+            stringValue: 
+            indexValue: 0
+            stringValues: []
+          preTriggerBroadcastType: 0
+          eventInd:
+            stringValue: Event 1
+            indexValue: 0
+            stringValues: []
+          eventOption: 2
+      valueDeltaOptions: []
+      controllerOptions:
+      - optionName: 'Set Target: Chase | Add'
+        affectedObj: 0
+        overrideObject: {fileID: 0}
+        affectController: 0
+        state: 0
+        targetType: 0
+        implementType: 0
+      - optionName: 'Set Target: LookAt | Remove'
+        affectedObj: 0
+        overrideObject: {fileID: 0}
+        affectController: 0
+        state: 0
+        targetType: 2
+        implementType: 1
+      detectZoneInd: 0
+      delay: 0
+      repeat: 0
+      repeatTime: 0
+      finishType: 0
+      totalTime: 0
+      active: 0
+      finished: 0
+    receivers: []
+    receiverIndMask: 0
+--- !u!1 &3470528445652640208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3470528445652640209}
+  m_Layer: 0
+  m_Name: SpawnLocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3470528445652640209
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3470528445652640208}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.37, y: 0, z: 0.51}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3470528444608307961}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
