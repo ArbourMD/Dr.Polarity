@@ -1,0 +1,182 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7422893890478390928
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2642140884770250348, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: m_Name
+      value: SmallAnonoyingEnemyLevel 3 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140883861536283, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250324, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 91.62203
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250324, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.369297
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250324, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -29.316563
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250324, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250324, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250324, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250324, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250324, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250324, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250324, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250324, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250323, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250323, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmOwnerDefaultParams.Array.data[1].gameObject.value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250323, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmOwnerDefaultParams.Array.data[2].gameObject.value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250323, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmOwnerDefaultParams.Array.data[3].gameObject.value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250323, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: fsm.states.Array.data[5].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250323, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: fsm.states.Array.data[6].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250323, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: fsm.states.Array.data[7].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250323, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: fsm.states.Array.data[9].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250323, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.actionEnabled.Array.data[3]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250323, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250321, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: fsm.states.Array.data[0].actionData.fsmGameObjectParams.Array.data[0].value
+      value: 
+      objectReference: {fileID: 8476749542709634020, guid: b81866187e8657a48bda7e731ddb9041,
+        type: 3}
+    - target: {fileID: 2642140884770250321, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250320, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmStringParams.Array.data[0].value
+      value: Dr.Polarity_Controoler
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250336, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: fsm.states.Array.data[12].actionData.fsmPropertyParams.Array.data[1].EnumParameter.enumName
+      value: HutongGames.PlayMaker.None
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250336, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: fsm.states.Array.data[12].actionData.fsmPropertyParams.Array.data[1].ArrayParameter.objectTypeName
+      value: UnityEngine.Object
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250336, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: fsm.states.Array.data[12].actionData.fsmPropertyParams.Array.data[2].EnumParameter.enumName
+      value: HutongGames.PlayMaker.None
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250336, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: fsm.states.Array.data[12].actionData.fsmPropertyParams.Array.data[2].ArrayParameter.objectTypeName
+      value: UnityEngine.Object
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250337, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: fsm.states.Array.data[12].actionData.fsmPropertyParams.Array.data[1].EnumParameter.enumName
+      value: HutongGames.PlayMaker.None
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250337, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: fsm.states.Array.data[12].actionData.fsmPropertyParams.Array.data[1].ArrayParameter.objectTypeName
+      value: UnityEngine.Object
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250337, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: fsm.states.Array.data[12].actionData.fsmPropertyParams.Array.data[2].EnumParameter.enumName
+      value: HutongGames.PlayMaker.None
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642140884770250337, guid: 864ce39b655b90246856bd58b796d1b6,
+        type: 3}
+      propertyPath: fsm.states.Array.data[12].actionData.fsmPropertyParams.Array.data[2].ArrayParameter.objectTypeName
+      value: UnityEngine.Object
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 864ce39b655b90246856bd58b796d1b6, type: 3}

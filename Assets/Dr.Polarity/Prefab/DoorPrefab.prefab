@@ -1683,7 +1683,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 60
-        y: 219.625
+        y: 251.625
         width: 400
         height: 64
       isBreakpoint: 0
@@ -1869,7 +1869,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 831.1797
-        y: 307.8828
+        y: 339.8828
         width: 156.5
         height: 32
       isBreakpoint: 0
@@ -1955,7 +1955,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 831.35156
-        y: 184.71875
+        y: 216.71875
         width: 149
         height: 32
       isBreakpoint: 0
@@ -2041,7 +2041,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 832.7031
-        y: 419.03125
+        y: 451.03125
         width: 149.5
         height: 32
       isBreakpoint: 0
@@ -2127,8 +2127,90 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 363.1797
-        y: 101.77344
-        width: 178
+        y: 133.77344
+        width: 176.5
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: bool true
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: TagSwitch
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: bool false
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Bool False
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.BoolTest
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: a4c8bf00
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: Powered Door 1 on
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - bool true
+        - bool false
+        byteData: 01
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 11000000170000001700000001000000
+        paramName:
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 00000000000000000100000000000000
+        paramByteDataSize: 00000000000000000000000001000000
+    - name: Bool False
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 591
+        y: 113
+        width: 100
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -2138,19 +2220,17 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: TagSwitch
+        toState: Initializer
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
       actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.NextFrameEvent
-        customNames:
-        - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 88611604
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -2173,30 +2253,34 @@ MonoBehaviour:
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
-        stringParams:
-        - FINISHED
+        stringParams: []
         byteData: 
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 17000000
-        paramName:
-        - sendEvent
-        paramDataPos: 00000000
-        paramByteDataSize: 00000000
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
     events:
-    - name: Neg
-      isSystemEvent: 0
+    - name: FINISHED
+      isSystemEvent: 1
       isGlobal: 0
-    - name: Pos
+    - name: Neg
       isSystemEvent: 0
       isGlobal: 0
     - name: Neut
       isSystemEvent: 0
       isGlobal: 0
-    - name: FINISHED
-      isSystemEvent: 1
+    - name: Pos
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: bool false
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: bool true
+      isSystemEvent: 0
       isGlobal: 0
     globalTransitions: []
     variables:
@@ -2290,15 +2374,15 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: SetTag
-    startState: Initializer
+    startState: Initializer 2
     states:
     - name: Initializer
       description: Empty, Make no changes to this.
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 211
-        y: 121
+        x: 419
+        y: 265
         width: 169
         height: 32
       isBreakpoint: 0
@@ -2358,8 +2442,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 55
-        y: 425
+        x: 263
+        y: 569
         width: 328.5
         height: 32
       isBreakpoint: 0
@@ -2475,8 +2559,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 575
-        y: 439
+        x: 783
+        y: 583
         width: 400
         height: 32
       isBreakpoint: 0
@@ -2547,8 +2631,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 583
-        y: 110
+        x: 791
+        y: 254
         width: 158
         height: 32
       isBreakpoint: 0
@@ -2620,6 +2704,148 @@ MonoBehaviour:
         - tag
         paramDataPos: 0000000000000000
         paramByteDataSize: 0000000000000000
+    - name: Initializer 2
+      description: Start state nothing to change here.
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 52.085938
+        y: 114.625
+        width: 183
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: bool true
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Initializer
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: bool false
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Bool False
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.BoolTest
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: a4c8bf00
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: Powered Door 1 on
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - bool true
+        - bool false
+        byteData: 01
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 11000000170000001700000001000000
+        paramName:
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 00000000000000000100000000000000
+        paramByteDataSize: 00000000000000000000000001000000
+    - name: Bool False
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 268.5078
+        y: 210.95312
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Initializer 2
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -2717,15 +2943,15 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: PosTargetMove
-    startState: TagCheck
+    startState: Initializer
     states:
     - name: Initilizer
       description: Dont Change
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 324.27344
-        y: 199.10156
+        x: 452.27344
+        y: 279.10156
         width: 105.5
         height: 48
       isBreakpoint: 0
@@ -2821,8 +3047,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 64
-        y: 295
+        x: 192
+        y: 375
         width: 400
         height: 48
       isBreakpoint: 0
@@ -2966,8 +3192,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 347.10938
-        y: 431.25
+        x: 475.10938
+        y: 511.25
         width: 119
         height: 48
       isBreakpoint: 0
@@ -3064,8 +3290,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 346.8672
-        y: 608.7344
+        x: 474.8672
+        y: 688.7344
         width: 162
         height: 48
       isBreakpoint: 0
@@ -3178,8 +3404,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 323.59375
-        y: 113.40625
+        x: 451.59375
+        y: 193.40625
         width: 105.5
         height: 32
       isBreakpoint: 0
@@ -3295,8 +3521,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 699.28125
-        y: 230.58594
+        x: 827.28125
+        y: 310.58594
         width: 400
         height: 48
       isBreakpoint: 0
@@ -3607,8 +3833,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 346.02344
-        y: 529.78906
+        x: 474.02344
+        y: 609.78906
         width: 145
         height: 32
       isBreakpoint: 0
@@ -3749,8 +3975,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 986.1953
-        y: 145.19531
+        x: 1114.1953
+        y: 225.19531
         width: 105.5
         height: 32
       isBreakpoint: 0
@@ -3861,8 +4087,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 713.3281
-        y: 144.67188
+        x: 841.3281
+        y: 224.67188
         width: 105.5
         height: 32
       isBreakpoint: 0
@@ -4020,8 +4246,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 707.64844
-        y: 485.32812
+        x: 835.64844
+        y: 565.3281
         width: 400
         height: 48
       isBreakpoint: 0
@@ -4301,8 +4527,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 995.8281
-        y: 623.65625
+        x: 1123.8281
+        y: 703.65625
         width: 105.5
         height: 32
       isBreakpoint: 0
@@ -4377,8 +4603,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 711.3594
-        y: 625.9219
+        x: 839.3594
+        y: 705.9219
         width: 105.5
         height: 32
       isBreakpoint: 0
@@ -4529,6 +4755,148 @@ MonoBehaviour:
         - realTime
         paramDataPos: 000000000100000000000000020000000300000001000000000000000100000002000000020000000300000003000000000000000100000004000000020000000000000005000000
         paramByteDataSize: 000000000000000001000000000000000000000001000000000000000000000001000000000000000000000001000000000000000000000001000000000000000000000001000000
+    - name: Initializer
+      description: Start state nothing to change here.
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 53.578125
+        y: 103.125
+        width: 176.5
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: bool true
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: TagCheck
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: bool false
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Bool False
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.BoolTest
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: a4c8bf00
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: Powered Door 1 on
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - bool true
+        - bool false
+        byteData: 01
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 11000000170000001700000001000000
+        paramName:
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 00000000000000000100000000000000
+        paramByteDataSize: 00000000000000000000000001000000
+    - name: Bool False
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 270
+        y: 199.45312
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Initializer
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -4656,15 +5024,15 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: NegTargetMove
-    startState: TagCheck
+    startState: Initializer
     states:
     - name: Initilizer
       description: Dont Change
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 341.6797
-        y: 197.69531
+        x: 421.6797
+        y: 261.6953
         width: 105.5
         height: 48
       isBreakpoint: 0
@@ -4760,8 +5128,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 51.40625
-        y: 297.59375
+        x: 131.40625
+        y: 361.59375
         width: 400
         height: 48
       isBreakpoint: 0
@@ -4905,8 +5273,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 339.51562
-        y: 422.84375
+        x: 419.51562
+        y: 486.84375
         width: 119
         height: 48
       isBreakpoint: 0
@@ -5003,8 +5371,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 294.8125
-        y: 611.8672
+        x: 374.8125
+        y: 675.8672
         width: 162
         height: 48
       isBreakpoint: 0
@@ -5117,8 +5485,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 344
-        y: 103
+        x: 424
+        y: 167
         width: 105.5
         height: 32
       isBreakpoint: 0
@@ -5234,8 +5602,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 757.7344
-        y: 250.65625
+        x: 837.7344
+        y: 314.65625
         width: 400
         height: 48
       isBreakpoint: 0
@@ -5569,8 +5937,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 312.14844
-        y: 531.21094
+        x: 392.14844
+        y: 595.21094
         width: 145
         height: 32
       isBreakpoint: 0
@@ -5711,8 +6079,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1040.8828
-        y: 169.49219
+        x: 1120.8828
+        y: 233.49219
         width: 105.5
         height: 32
       isBreakpoint: 0
@@ -5823,8 +6191,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 756.40625
-        y: 175.50781
+        x: 836.40625
+        y: 239.50781
         width: 105.5
         height: 32
       isBreakpoint: 0
@@ -5982,8 +6350,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 774.1797
-        y: 507.2578
+        x: 854.1797
+        y: 571.2578
         width: 400
         height: 48
       isBreakpoint: 0
@@ -6263,8 +6631,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1066.75
-        y: 631.6094
+        x: 1146.75
+        y: 695.6094
         width: 105.5
         height: 32
       isBreakpoint: 0
@@ -6339,8 +6707,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 781.27344
-        y: 651.03125
+        x: 861.27344
+        y: 715.03125
         width: 105.5
         height: 32
       isBreakpoint: 0
@@ -6491,6 +6859,148 @@ MonoBehaviour:
         - realTime
         paramDataPos: 000000000100000000000000020000000300000001000000000000000100000002000000020000000300000003000000000000000100000004000000020000000000000005000000
         paramByteDataSize: 000000000000000001000000000000000000000001000000000000000000000001000000000000000000000001000000000000000000000001000000000000000000000001000000
+    - name: Initializer
+      description: Start state nothing to change here.
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 58.523438
+        y: 115.38281
+        width: 176.5
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: bool true
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: TagCheck
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: bool false
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Bool False
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.BoolTest
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: a4c8bf00
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: Powered Door 1 on
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - bool true
+        - bool false
+        byteData: 01
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 11000000170000001700000001000000
+        paramName:
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 00000000000000000100000000000000
+        paramByteDataSize: 00000000000000000000000001000000
+    - name: Bool False
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 274.9453
+        y: 211.71094
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Initializer
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -6618,15 +7128,15 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: magnetic stick (NonEnemy)
-    startState: TagChecks
+    startState: Initializer
     states:
     - name: TagChecks
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 64
-        y: 180.14844
+        x: 301.15625
+        y: 187.1875
         width: 101
         height: 48
       isBreakpoint: 0
@@ -6758,7 +7268,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 271
+        x: 687
         y: 103
         width: 110
         height: 32
@@ -6853,7 +7363,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 283
+        x: 699
         y: 338.15625
         width: 112
         height: 32
@@ -6948,7 +7458,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 543.3047
+        x: 959.3047
         y: 101.796875
         width: 100
         height: 32
@@ -7030,7 +7540,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 507.3828
+        x: 923.3828
         y: 257.71094
         width: 100
         height: 32
@@ -7113,7 +7623,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 263
+        x: 679
         y: 206.14844
         width: 100
         height: 32
@@ -7186,6 +7696,148 @@ MonoBehaviour:
         - isKinematic
         paramDataPos: 0000000000000000
         paramByteDataSize: 0000000000000000
+    - name: Bool False
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 269.98438
+        y: 309.1172
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Initializer
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    - name: Initializer
+      description: Start state nothing to change here.
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 53.5625
+        y: 212.78906
+        width: 176.5
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: bool true
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: TagChecks
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: bool false
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Bool False
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.BoolTest
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: a4c8bf00
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: Powered Door 1 on
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - bool true
+        - bool false
+        byteData: 01
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 11000000170000001700000001000000
+        paramName:
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 00000000000000000100000000000000
+        paramByteDataSize: 00000000000000000000000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
