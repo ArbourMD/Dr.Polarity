@@ -8212,7 +8212,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7da3d721666f28e4bbc4eada7a38f351, type: 2}
+  - {fileID: 2100000, guid: b65e28888f4e16647afd54fde184e63f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8269,8 +8269,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 153.23438
-        y: 401.4453
+        x: 57.234375
+        y: 305.4453
         width: 100
         height: 64
       isBreakpoint: 0
@@ -8455,8 +8455,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 631.41406
-        y: 350.70312
+        x: 535.41406
+        y: 254.70312
         width: 100
         height: 32
       isBreakpoint: 0
@@ -8541,8 +8541,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 655.58594
-        y: 283.53906
+        x: 559.58594
+        y: 187.53906
         width: 100
         height: 32
       isBreakpoint: 0
@@ -8627,8 +8627,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 635.9375
-        y: 477.85156
+        x: 539.9375
+        y: 381.85156
         width: 100
         height: 32
       isBreakpoint: 0
@@ -8677,7 +8677,7 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           typeName: 
-          value: {fileID: 2100000, guid: 7da3d721666f28e4bbc4eada7a38f351, type: 2}
+          value: {fileID: 2100000, guid: b65e28888f4e16647afd54fde184e63f, type: 2}
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
@@ -8713,8 +8713,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 366.41406
-        y: 210.59375
+        x: 270.41406
+        y: 114.59375
         width: 100
         height: 32
       isBreakpoint: 0
@@ -12939,7 +12939,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7da3d721666f28e4bbc4eada7a38f351, type: 2}
+  - {fileID: 2100000, guid: b65e28888f4e16647afd54fde184e63f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12996,8 +12996,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 153.23438
-        y: 401.4453
+        x: 57.234375
+        y: 305.4453
         width: 100
         height: 64
       isBreakpoint: 0
@@ -13182,8 +13182,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 631.41406
-        y: 350.70312
+        x: 535.41406
+        y: 254.70312
         width: 100
         height: 32
       isBreakpoint: 0
@@ -13268,8 +13268,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 655.58594
-        y: 283.53906
+        x: 559.58594
+        y: 187.53906
         width: 100
         height: 32
       isBreakpoint: 0
@@ -13354,8 +13354,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 635.9375
-        y: 477.85156
+        x: 539.9375
+        y: 381.85156
         width: 100
         height: 32
       isBreakpoint: 0
@@ -13404,7 +13404,7 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           typeName: 
-          value: {fileID: 2100000, guid: 7da3d721666f28e4bbc4eada7a38f351, type: 2}
+          value: {fileID: 2100000, guid: b65e28888f4e16647afd54fde184e63f, type: 2}
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
@@ -13440,8 +13440,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 366.41406
-        y: 210.59375
+        x: 270.41406
+        y: 114.59375
         width: 100
         height: 32
       isBreakpoint: 0
