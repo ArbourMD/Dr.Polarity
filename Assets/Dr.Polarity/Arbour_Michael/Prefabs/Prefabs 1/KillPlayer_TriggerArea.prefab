@@ -1,0 +1,252 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2854682122136608037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2854682122136608043}
+  - component: {fileID: 2854682122136608042}
+  m_Layer: 0
+  m_Name: KillPlayer_TriggerArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2854682122136608043
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2854682122136608037}
+  m_LocalRotation: {x: -0, y: 0.7071069, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -2.39, y: -8.89, z: 3.460001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4166167932306438219}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
+--- !u!114 &2854682122136608042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2854682122136608037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1f90ba81799e9e4797a4282afc748d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType: 0
+  detectZones:
+  - zoneName: Door Trigger
+    overrideZoneName: 0
+    overrideLabel: 0
+    overrideDetectMask: 0
+    detectMask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    ignoreTriggerColliders: 1
+    overrideDetectType: 0
+    detectType: 1
+    colliderToUse: {fileID: 0}
+    overridePositionType: 0
+    positionType: 1
+    trans: {fileID: 2854682122136608043}
+    worldPos: {x: -8.014626, y: 1.1685877, z: -3.9102497}
+    offset: {x: 0, y: 0, z: 0}
+    size: {x: 3.5, y: 2, z: 8.5}
+    useTransformAngle: 0
+    angle: {x: 0, y: 122, z: 0}
+    radius: 1
+    height: 0
+    overrideColor: 0
+    debugColor: {r: 1, g: 0, b: 0, a: 1}
+    handlePoint: {x: -8.014626, y: 1.1685877, z: -3.9102497}
+  preTriggers: []
+  triggers:
+  - triggerName: 'Trigger 0 | 0: Door Trigger | OnEnter'
+    triggerType: 0
+    detectZoneInd: 0
+    onStayOption: 0
+    repeatDelay: 0
+    input:
+      stringValue: 
+      indexValue: 0
+    validationMask: 3
+    validationLayer:
+      serializedVersion: 2
+      m_Bits: 2048
+    validationTag:
+      stringValue: Player
+    engineValueDataManager: {fileID: 0}
+    selection:
+      selectionName: 
+      category:
+        stringValue: 
+        indexValue: 0
+        stringValues: []
+      engineValue:
+        stringValue: 
+        indexValue: 0
+        stringValues: []
+      valueData: {fileID: 0}
+    valueOption: 0
+    comparedValue: 0
+    angle: 0
+    obstacleLayer:
+      serializedVersion: 2
+      m_Bits: 0
+    eyesOffset: {x: 0, y: 0, z: 0}
+    lookLocationOffset: {x: 0, y: 0, z: 0}
+    activationAmount: 0
+    maxActivations: 1
+    activationType: 0
+    engineEvents:
+    - eventName: Event 1
+      sceneObject:
+        sceneObjectType: 2
+        overrideGameObject: {fileID: 0}
+        closestTag: 
+        nameToFind: 
+      startType: 0
+      inputButton:
+        stringValue: Interact
+        indexValue: 28
+      eventTypeMask: 8
+      commons: []
+      anims: []
+      methods:
+      - optionName: 
+        affectedObj: 0
+        overrideObject: {fileID: 0}
+        method:
+          objectType: 0
+          behaviour:
+            stringValue: 
+            indexValue: 0
+            stringValues: []
+          go: {fileID: 0}
+          goInstanceValue: 0
+          behaviourToUse: 
+          behaviourInd: 0
+          methodToCall: 
+          methodInd: 0
+          parameterValues: []
+      interacts:
+      - optionName: 
+        affectedObj: 0
+        overrideObject: {fileID: 0}
+        interactFX: {fileID: 11400000, guid: 9d11f4039ade6824d95453789fe4b18b, type: 2}
+      eventOptions: []
+      valueDeltaOptions: []
+      controllerOptions: []
+      detectZoneInd: 0
+      delay: 0
+      repeat: 0
+      repeatTime: 0
+      finishType: 0
+      totalTime: 0
+      active: 0
+      finished: 0
+    receivers: []
+    receiverIndMask: 0
+--- !u!1 &4166167932306438218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4166167932306438219}
+  - component: {fileID: 4166167932306438214}
+  - component: {fileID: 4166167932306438217}
+  - component: {fileID: 4166167932306438216}
+  m_Layer: 0
+  m_Name: Mesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4166167932306438219
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4166167932306438218}
+  m_LocalRotation: {x: -0, y: 0.28240186, z: -0, w: 0.9592962}
+  m_LocalPosition: {x: -0.079, y: -0.476, z: -0.192}
+  m_LocalScale: {x: 3.6504638, y: 1.1473174, z: 8.388326}
+  m_Children: []
+  m_Father: {fileID: 2854682122136608043}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 32.807003, z: 0}
+--- !u!33 &4166167932306438214
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4166167932306438218}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &4166167932306438217
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4166167932306438218}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 984e31b4c4981964aa426cc4386cb28c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &4166167932306438216
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4166167932306438218}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
