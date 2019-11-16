@@ -130,13 +130,19 @@
                 "type": "UnityEngine.ProBuilder.SelectMode, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "editor.selectMode",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "value": "{\"m_Value\":1}"
 =======
+=======
+>>>>>>> master
 <<<<<<< Updated upstream
                 "value": "{\"m_Value\":1}"
 =======
                 "value": "{\"m_Value\":8}"
 >>>>>>> Stashed changes
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
             },
             {
