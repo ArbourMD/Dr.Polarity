@@ -5,8 +5,11 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Dr.Polarity/V_Slice/Josh_LevelBlock/Scene/Verticle Slice blockout
       Dr Polarity.unity
     guid: 3d9cb2c5d3780d64a90eb6aaad7461a9
+  - enabled: 1
+    path: Assets/Dr.Polarity/Rich_Ryan/Scenes/Level4Curve.unity
+    guid: 61ce4f27880a68446aa8eccb79c57f36
   m_configObjects: {}
