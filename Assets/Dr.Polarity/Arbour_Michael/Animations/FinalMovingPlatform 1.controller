@@ -140,11 +140,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-<<<<<<< Updated upstream
   m_Motion: {fileID: 7400000, guid: fd73fc1a89a6e3b4aa64ae3e422d0b55, type: 2}
-=======
-  m_Motion: {fileID: 7400000, guid: 790e00c3c8f9afa4daaabb66e1fe531a, type: 2}
->>>>>>> Stashed changes
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
