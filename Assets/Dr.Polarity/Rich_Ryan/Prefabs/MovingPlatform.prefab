@@ -2285,8 +2285,8 @@ MonoBehaviour:
       colorIndex: 1
       position:
         serializedVersion: 2
-        x: 630.6797
-        y: 119.00781
+        x: 243.67969
+        y: 106.984375
         width: 100
         height: 48
       isBreakpoint: 0
@@ -2380,8 +2380,8 @@ MonoBehaviour:
       colorIndex: 1
       position:
         serializedVersion: 2
-        x: 628.40625
-        y: 194.90625
+        x: 241.40625
+        y: 182.88281
         width: 106
         height: 48
       isBreakpoint: 0
@@ -2525,8 +2525,8 @@ MonoBehaviour:
       colorIndex: 1
       position:
         serializedVersion: 2
-        x: 624.5156
-        y: 276.15625
+        x: 237.51562
+        y: 264.1328
         width: 119
         height: 48
       isBreakpoint: 0
@@ -2537,7 +2537,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: GetTargetPostion
+        toState: CorrectPlatformCheck
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -2623,7 +2623,7 @@ MonoBehaviour:
       colorIndex: 4
       position:
         serializedVersion: 2
-        x: 1033.2734
+        x: 873.27344
         y: 282.64062
         width: 162
         height: 48
@@ -2737,8 +2737,8 @@ MonoBehaviour:
       colorIndex: 1
       position:
         serializedVersion: 2
-        x: 449
-        y: 113.3125
+        x: 62
+        y: 101.28906
         width: 100
         height: 32
       isBreakpoint: 0
@@ -2852,7 +2852,7 @@ MonoBehaviour:
       colorIndex: 4
       position:
         serializedVersion: 2
-        x: 826.4297
+        x: 666.4297
         y: 287.6953
         width: 145
         height: 32
@@ -3035,7 +3035,7 @@ MonoBehaviour:
       colorIndex: 3
       position:
         serializedVersion: 2
-        x: 1297.4766
+        x: 1137.4766
         y: 358.2422
         width: 100
         height: 32
@@ -3143,7 +3143,7 @@ MonoBehaviour:
       colorIndex: 3
       position:
         serializedVersion: 2
-        x: 1294.2344
+        x: 1134.2344
         y: 437.5625
         width: 100
         height: 32
@@ -3215,7 +3215,7 @@ MonoBehaviour:
       colorIndex: 6
       position:
         serializedVersion: 2
-        x: 1297.7656
+        x: 1137.7656
         y: 510.82812
         width: 100
         height: 32
@@ -3423,7 +3423,7 @@ MonoBehaviour:
       colorIndex: 6
       position:
         serializedVersion: 2
-        x: 1309.9453
+        x: 1149.9453
         y: 108
         width: 100
         height: 32
@@ -3631,7 +3631,7 @@ MonoBehaviour:
       colorIndex: 3
       position:
         serializedVersion: 2
-        x: 1302.5078
+        x: 1142.5078
         y: 251.13281
         width: 100
         height: 32
@@ -3739,7 +3739,7 @@ MonoBehaviour:
       colorIndex: 3
       position:
         serializedVersion: 2
-        x: 1303.5547
+        x: 1143.5547
         y: 179.02344
         width: 100
         height: 32
@@ -3806,6 +3806,110 @@ MonoBehaviour:
         - realTime
         paramDataPos: 000000000000000000000000
         paramByteDataSize: 000000000000000001000000
+    - name: CorrectPlatformCheck
+      description: 
+      colorIndex: 1
+      position:
+        serializedVersion: 2
+        x: 426
+        y: 264
+        width: 176
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: GetTargetPostion
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: Retry
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Initilizer
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GameObjectCompare
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: ef8d8504
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 5685684802516696881}
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: TargetObject
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0.001
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - FINISHED
+        - Retry
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 140000001300000017000000170000001100000001000000
+        paramName:
+        - gameObjectVariable
+        - compareTo
+        - equalEvent
+        - notEqualEvent
+        - storeResult
+        - everyFrame
+        paramDataPos: 000000000000000000000000010000000000000000000000
+        paramByteDataSize: 000000000000000001000000010000000100000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -3987,8 +4091,8 @@ MonoBehaviour:
       colorIndex: 1
       position:
         serializedVersion: 2
-        x: 243.67969
-        y: 113.00781
+        x: 244.67969
+        y: 119.00781
         width: 100
         height: 48
       isBreakpoint: 0
@@ -4082,8 +4186,8 @@ MonoBehaviour:
       colorIndex: 1
       position:
         serializedVersion: 2
-        x: 241.40625
-        y: 188.90625
+        x: 242.40625
+        y: 194.90625
         width: 106
         height: 48
       isBreakpoint: 0
@@ -4227,8 +4331,8 @@ MonoBehaviour:
       colorIndex: 1
       position:
         serializedVersion: 2
-        x: 237.51562
-        y: 270.15625
+        x: 238.51562
+        y: 276.15625
         width: 119
         height: 48
       isBreakpoint: 0
@@ -4239,7 +4343,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: GetTargetPostion
+        toState: CorrectPlatformCheck
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -4325,8 +4429,8 @@ MonoBehaviour:
       colorIndex: 4
       position:
         serializedVersion: 2
-        x: 646.27344
-        y: 276.64062
+        x: 870.27344
+        y: 292.64062
         width: 162
         height: 48
       isBreakpoint: 0
@@ -4439,8 +4543,8 @@ MonoBehaviour:
       colorIndex: 1
       position:
         serializedVersion: 2
-        x: 62
-        y: 107.3125
+        x: 63
+        y: 113.3125
         width: 100
         height: 32
       isBreakpoint: 0
@@ -4554,8 +4658,8 @@ MonoBehaviour:
       colorIndex: 4
       position:
         serializedVersion: 2
-        x: 439.4297
-        y: 281.6953
+        x: 663.4297
+        y: 297.6953
         width: 145
         height: 32
       isBreakpoint: 0
@@ -4737,8 +4841,8 @@ MonoBehaviour:
       colorIndex: 3
       position:
         serializedVersion: 2
-        x: 910.47656
-        y: 352.2422
+        x: 1134.4766
+        y: 368.2422
         width: 100
         height: 32
       isBreakpoint: 0
@@ -4845,8 +4949,8 @@ MonoBehaviour:
       colorIndex: 3
       position:
         serializedVersion: 2
-        x: 907.2344
-        y: 431.5625
+        x: 1131.2344
+        y: 447.5625
         width: 100
         height: 32
       isBreakpoint: 0
@@ -4917,8 +5021,8 @@ MonoBehaviour:
       colorIndex: 6
       position:
         serializedVersion: 2
-        x: 910.7656
-        y: 504.82812
+        x: 1134.7656
+        y: 520.8281
         width: 100
         height: 32
       isBreakpoint: 0
@@ -5125,8 +5229,8 @@ MonoBehaviour:
       colorIndex: 6
       position:
         serializedVersion: 2
-        x: 922.9453
-        y: 102
+        x: 1146.9453
+        y: 118
         width: 100
         height: 32
       isBreakpoint: 0
@@ -5469,8 +5573,8 @@ MonoBehaviour:
       colorIndex: 3
       position:
         serializedVersion: 2
-        x: 915.5078
-        y: 245.13281
+        x: 1139.5078
+        y: 261.1328
         width: 100
         height: 32
       isBreakpoint: 0
@@ -5577,8 +5681,8 @@ MonoBehaviour:
       colorIndex: 3
       position:
         serializedVersion: 2
-        x: 916.5547
-        y: 173.02344
+        x: 1140.5547
+        y: 189.02344
         width: 100
         height: 32
       isBreakpoint: 0
@@ -5644,6 +5748,110 @@ MonoBehaviour:
         - realTime
         paramDataPos: 000000000000000000000000
         paramByteDataSize: 000000000000000001000000
+    - name: CorrectPlatformCheck
+      description: 
+      colorIndex: 1
+      position:
+        serializedVersion: 2
+        x: 424
+        y: 282.5
+        width: 176
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: GetTargetPostion
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: Retry
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Initilizer
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GameObjectCompare
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: ef8d8504
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 5685684802516696881}
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: TargetObject
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0.001
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - FINISHED
+        - Retry
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 140000001300000017000000170000001100000001000000
+        paramName:
+        - gameObjectVariable
+        - compareTo
+        - equalEvent
+        - notEqualEvent
+        - storeResult
+        - everyFrame
+        paramDataPos: 000000000000000000000000010000000000000000000000
+        paramByteDataSize: 000000000000000001000000010000000100000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -6684,8 +6892,8 @@ MonoBehaviour:
       colorIndex: 1
       position:
         serializedVersion: 2
-        x: 630.6797
-        y: 119.00781
+        x: 240.66406
+        y: 107.921875
         width: 100
         height: 48
       isBreakpoint: 0
@@ -6779,8 +6987,8 @@ MonoBehaviour:
       colorIndex: 1
       position:
         serializedVersion: 2
-        x: 628.40625
-        y: 194.90625
+        x: 238.39062
+        y: 183.82031
         width: 106
         height: 48
       isBreakpoint: 0
@@ -6924,8 +7132,8 @@ MonoBehaviour:
       colorIndex: 1
       position:
         serializedVersion: 2
-        x: 624.5156
-        y: 276.15625
+        x: 234.5
+        y: 265.0703
         width: 119
         height: 48
       isBreakpoint: 0
@@ -6936,7 +7144,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: GetTargetPostion
+        toState: CorrectPlatformCheck
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -7022,7 +7230,7 @@ MonoBehaviour:
       colorIndex: 4
       position:
         serializedVersion: 2
-        x: 1033.2734
+        x: 793.27344
         y: 282.64062
         width: 162
         height: 48
@@ -7136,8 +7344,8 @@ MonoBehaviour:
       colorIndex: 1
       position:
         serializedVersion: 2
-        x: 449
-        y: 113.3125
+        x: 58.984375
+        y: 102.22656
         width: 100
         height: 32
       isBreakpoint: 0
@@ -7251,7 +7459,7 @@ MonoBehaviour:
       colorIndex: 4
       position:
         serializedVersion: 2
-        x: 826.4297
+        x: 586.4297
         y: 287.6953
         width: 145
         height: 32
@@ -7434,7 +7642,7 @@ MonoBehaviour:
       colorIndex: 3
       position:
         serializedVersion: 2
-        x: 1297.4766
+        x: 1057.4766
         y: 358.2422
         width: 100
         height: 32
@@ -7542,7 +7750,7 @@ MonoBehaviour:
       colorIndex: 3
       position:
         serializedVersion: 2
-        x: 1294.2344
+        x: 1054.2344
         y: 437.5625
         width: 100
         height: 32
@@ -7614,7 +7822,7 @@ MonoBehaviour:
       colorIndex: 6
       position:
         serializedVersion: 2
-        x: 1297.7656
+        x: 1057.7656
         y: 510.82812
         width: 100
         height: 32
@@ -7822,7 +8030,7 @@ MonoBehaviour:
       colorIndex: 6
       position:
         serializedVersion: 2
-        x: 1309.9453
+        x: 1069.9453
         y: 108
         width: 100
         height: 32
@@ -8030,7 +8238,7 @@ MonoBehaviour:
       colorIndex: 3
       position:
         serializedVersion: 2
-        x: 1302.5078
+        x: 1062.5078
         y: 251.13281
         width: 100
         height: 32
@@ -8138,7 +8346,7 @@ MonoBehaviour:
       colorIndex: 3
       position:
         serializedVersion: 2
-        x: 1303.5547
+        x: 1063.5547
         y: 179.02344
         width: 100
         height: 32
@@ -8205,6 +8413,110 @@ MonoBehaviour:
         - realTime
         paramDataPos: 000000000000000000000000
         paramByteDataSize: 000000000000000001000000
+    - name: CorrectPlatformCheck
+      description: 
+      colorIndex: 1
+      position:
+        serializedVersion: 2
+        x: 381.0078
+        y: 267.57812
+        width: 176
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: GetTargetPostion
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: Retry
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Initilizer
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GameObjectCompare
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: ef8d8504
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 5685684802516696881}
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: TargetObject
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0.001
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - FINISHED
+        - Retry
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 140000001300000017000000170000001100000001000000
+        paramName:
+        - gameObjectVariable
+        - compareTo
+        - equalEvent
+        - notEqualEvent
+        - storeResult
+        - everyFrame
+        paramDataPos: 000000000000000000000000010000000000000000000000
+        paramByteDataSize: 000000000000000001000000010000000100000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -8386,8 +8698,8 @@ MonoBehaviour:
       colorIndex: 1
       position:
         serializedVersion: 2
-        x: 243.67969
-        y: 113.00781
+        x: 243.82812
+        y: 108.25781
         width: 100
         height: 48
       isBreakpoint: 0
@@ -8481,8 +8793,8 @@ MonoBehaviour:
       colorIndex: 1
       position:
         serializedVersion: 2
-        x: 241.40625
-        y: 188.90625
+        x: 241.55469
+        y: 184.15625
         width: 106
         height: 48
       isBreakpoint: 0
@@ -8626,8 +8938,8 @@ MonoBehaviour:
       colorIndex: 1
       position:
         serializedVersion: 2
-        x: 237.51562
-        y: 270.15625
+        x: 237.66406
+        y: 265.40625
         width: 119
         height: 48
       isBreakpoint: 0
@@ -8638,7 +8950,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: GetTargetPostion
+        toState: CorrectPlatformCheck
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -8724,7 +9036,7 @@ MonoBehaviour:
       colorIndex: 4
       position:
         serializedVersion: 2
-        x: 646.27344
+        x: 854.27344
         y: 276.64062
         width: 162
         height: 48
@@ -8838,8 +9150,8 @@ MonoBehaviour:
       colorIndex: 1
       position:
         serializedVersion: 2
-        x: 62
-        y: 107.3125
+        x: 62.148438
+        y: 102.5625
         width: 100
         height: 32
       isBreakpoint: 0
@@ -8953,7 +9265,7 @@ MonoBehaviour:
       colorIndex: 4
       position:
         serializedVersion: 2
-        x: 439.4297
+        x: 647.4297
         y: 281.6953
         width: 145
         height: 32
@@ -9136,7 +9448,7 @@ MonoBehaviour:
       colorIndex: 3
       position:
         serializedVersion: 2
-        x: 910.47656
+        x: 1118.4766
         y: 352.2422
         width: 100
         height: 32
@@ -9244,7 +9556,7 @@ MonoBehaviour:
       colorIndex: 3
       position:
         serializedVersion: 2
-        x: 907.2344
+        x: 1115.2344
         y: 431.5625
         width: 100
         height: 32
@@ -9316,7 +9628,7 @@ MonoBehaviour:
       colorIndex: 6
       position:
         serializedVersion: 2
-        x: 910.7656
+        x: 1118.7656
         y: 504.82812
         width: 100
         height: 32
@@ -9524,7 +9836,7 @@ MonoBehaviour:
       colorIndex: 6
       position:
         serializedVersion: 2
-        x: 922.9453
+        x: 1130.9453
         y: 102
         width: 100
         height: 32
@@ -9868,7 +10180,7 @@ MonoBehaviour:
       colorIndex: 3
       position:
         serializedVersion: 2
-        x: 915.5078
+        x: 1123.5078
         y: 245.13281
         width: 100
         height: 32
@@ -9976,7 +10288,7 @@ MonoBehaviour:
       colorIndex: 3
       position:
         serializedVersion: 2
-        x: 916.5547
+        x: 1124.5547
         y: 173.02344
         width: 100
         height: 32
@@ -10043,6 +10355,110 @@ MonoBehaviour:
         - realTime
         paramDataPos: 000000000000000000000000
         paramByteDataSize: 000000000000000001000000
+    - name: CorrectPlatformCheck
+      description: 
+      colorIndex: 1
+      position:
+        serializedVersion: 2
+        x: 422.21094
+        y: 274.21094
+        width: 176
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: GetTargetPostion
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: Retry
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Initilizer
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GameObjectCompare
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: ef8d8504
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 5685684802516696881}
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: TargetObject
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0.001
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - FINISHED
+        - Retry
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 140000001300000017000000170000001100000001000000
+        paramName:
+        - gameObjectVariable
+        - compareTo
+        - equalEvent
+        - notEqualEvent
+        - storeResult
+        - everyFrame
+        paramDataPos: 000000000000000000000000010000000000000000000000
+        paramByteDataSize: 000000000000000001000000010000000100000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1

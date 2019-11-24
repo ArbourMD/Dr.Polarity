@@ -1012,7 +1012,7 @@ BoxCollider:
   m_GameObject: {fileID: 8856158292891196384}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.4788929, y: 1.4810383, z: 0.4244113}
   m_Center: {x: 0.34200215, y: 0.099416494, z: -0.3871312}
@@ -1755,15 +1755,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8091689842912587059}
     m_Modifications:
-    - target: {fileID: 5019491416543928928, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
-        type: 3}
-      propertyPath: m_Name
-      value: WallMagnetic (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 5019491416543928927, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.03535372
+      value: 0.037
       objectReference: {fileID: 0}
     - target: {fileID: 5019491416543928927, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
         type: 3}
@@ -1773,7 +1768,7 @@ PrefabInstance:
     - target: {fileID: 5019491416543928927, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.32433772
+      value: 0.455
       objectReference: {fileID: 0}
     - target: {fileID: 5019491416543928927, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
         type: 3}
@@ -1783,7 +1778,7 @@ PrefabInstance:
     - target: {fileID: 5019491416543928927, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0066647087
+      value: 0.99997777
       objectReference: {fileID: 0}
     - target: {fileID: 5019491416543928927, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
         type: 3}
@@ -1793,7 +1788,7 @@ PrefabInstance:
     - target: {fileID: 5019491416543928927, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.9999778
+      value: -0.0066649904
       objectReference: {fileID: 0}
     - target: {fileID: 5019491416543928927, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
         type: 3}
@@ -1808,27 +1803,17 @@ PrefabInstance:
     - target: {fileID: 5019491416543928927, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 539.815
+      value: 180.76399
       objectReference: {fileID: 0}
     - target: {fileID: 5019491416543928927, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5019491416543928927, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
+    - target: {fileID: 5019491416543928928, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.3485051
-      objectReference: {fileID: 0}
-    - target: {fileID: 5019491416543928927, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.3485
-      objectReference: {fileID: 0}
-    - target: {fileID: 5019491416543928927, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.38836724
+      propertyPath: m_Name
+      value: WallMagnetic (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d, type: 3}
