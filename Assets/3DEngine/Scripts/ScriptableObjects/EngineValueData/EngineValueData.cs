@@ -3,21 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using Engine;
 
-public abstract class EngineValueData : ScriptableObject
+[CreateAssetMenu(menuName = "Data/Value/EngineValue")]
+public class EngineValueData : ScriptableObject
 {
     public EngineValueUIType valueUIType;
-    public abstract object MinValue { get; set; }
-    public abstract object MaxValue { get; set; }
-    public abstract object Value { get; set; }
+    [SerializeField] private float value;
+    [SerializeField] private float minValue;
+    [SerializeField] private float maxValue;
+    public float Value
+    {
+        get
+        {
+            return value;
+        }
+        set
+        {
+            if (value > MaxValue) this.value = MaxValue;
+            else if (value < MinValue) this.value = MinValue;
+            else this.value = value;
+        }
+    }
+    public  float MinValue { get { return minValue; } }
+    public  float MaxValue { get { return maxValue; } }
+
     [HideInInspector] public int id;
     public int ID { get { return id; } }
     public virtual void SetID(int _id) { id = _id; }
 
-    public float FloatValue { get { return ConvertValueToFloat(Value); } }
-    public float FloatMaxValue { get { return ConvertValueToFloat(MaxValue); } }
-    public float FloatMinValue { get { return ConvertValueToFloat(MinValue); } }
-
-    public virtual EngineValue CreateEngineValue()
+    public EngineValue CreateEngineValue()
     {
         var val = new EngineValue
         {
@@ -26,13 +39,5 @@ public abstract class EngineValueData : ScriptableObject
             Value = Value
         };
         return val;
-    }
-
-    protected virtual float ConvertValueToFloat(object _value)
-    {
-        if (_value is float) return (float)_value;
-        if (_value is int) return (int)_value;
-        Debug.LogError("Could not convert value!");
-        return 0;
     }
 }

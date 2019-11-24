@@ -9,21 +9,30 @@ public class EngineValue
 {
     protected EngineValueData data;
     public virtual EngineValueData Data { get { return data; } }
-    public virtual object Value { get; set; }
-    public virtual object MinValue { get; set; }
-    public virtual object MaxValue { get; set; }
-    protected object prevValue;
-    public float FloatValue { get { return ConvertValueToFloat(Value); } }
-    protected float PrevFloatValue { get { return ConvertValueToFloat(prevValue); } }
-    public float FloatMaxValue { get { return ConvertValueToFloat(MaxValue); } }
-    public float FloatMinValue { get { return ConvertValueToFloat(MinValue); } }
+    private float value;
+    public float Value 
+    {
+        get
+        {
+            return value;
+        }
+        set
+        {
+            if (value > MaxValue) this.value = MaxValue;
+            else if (value < MinValue) this.value = MinValue;
+            else this.value = value;
+        }
+    }
+    public virtual float MinValue { get; set; }
+    public virtual float MaxValue { get; set; }
+    protected float prevValue;
 
     protected int id;
     public int ID { get { return id; } }
 
     public bool IsReady { get { return !overheated && !IsEmpty; } }
-    public bool IsEmpty { get { return FloatValue <= FloatMinValue; } }
-    public bool IsFull { get { return FloatValue >= FloatMaxValue; } }
+    public bool IsEmpty { get { return Value <= MinValue; } }
+    public bool IsFull { get { return Value >= MaxValue; } }
 
     protected bool overheated;
     public bool IsOverheated { get { return overheated; } }
@@ -37,19 +46,19 @@ public class EngineValue
 
     //delegates
     //changed
-    public delegate void OnValueChangeDelegate(object _value);
+    public delegate void OnValueChangeDelegate(float _value);
     public event OnValueChangeDelegate valueChanged;
     void OnValueChanged() { valueChanged?.Invoke(Value); }
     //minmax changed
     public delegate void OnMinMaxChangeDelegate(float _min, float _max);
     public event OnMinMaxChangeDelegate minMaxChanged;
-    void OnMinMaxChanged() { minMaxChanged?.Invoke(FloatMinValue, FloatMaxValue); }
+    void OnMinMaxChanged() { minMaxChanged?.Invoke(MinValue, MaxValue); }
     //increased
-    public delegate void OnValueIncreaseDelegate(object _value);
+    public delegate void OnValueIncreaseDelegate(float _value);
     public event OnValueIncreaseDelegate valueIncreased;
     void OnValueIncreased() { valueIncreased?.Invoke(Value); }
     //decrease
-    public delegate void OnValueDecreaseDelegate(object _value);
+    public delegate void OnValueDecreaseDelegate(float _value);
     public event OnValueDecreaseDelegate valueDecreased;
     void OnValueDecreased() { valueDecreased?.Invoke(Value); }
     //empty
@@ -74,25 +83,22 @@ public class EngineValue
         OnValueChanged();
     }
 
-    public virtual void ValueDelta(object _amount)
+    public virtual void ValueDelta(float _amount)
     {
-        var val = FloatValue + ConvertValueToFloat(_amount);
-        Value = val;
+        Value += _amount;
         CheckEvents();
     }
 
-    public virtual void ValueMaxDelta(object _amount)
+    public virtual void ValueMaxDelta(float _amount)
     {
-        var val = FloatMaxValue + ConvertValueToFloat(_amount);
-        MaxValue = val;
+        MaxValue += _amount;
 
         OnMinMaxChanged();
     }
 
-    public virtual void ValueMinDelta(object _amount)
+    public virtual void ValueMinDelta(float _amount)
     {
-        var val = FloatMaxValue + ConvertValueToFloat(_amount);
-        MinValue = val;
+        MinValue += _amount;
 
         OnMinMaxChanged();
     }
@@ -115,7 +121,7 @@ public class EngineValue
     IEnumerator<float> StartRecharge(float _speed)
     {
         recharging = true;
-        while (FloatValue < FloatMaxValue)
+        while (Value < MaxValue)
         {
             yield return Timing.WaitForOneFrame;
             if (!overheated)
@@ -155,21 +161,13 @@ public class EngineValue
             prevValue = Value;
             OnValueChanged();
         }
-        if (FloatValue > PrevFloatValue)
+        if (Value > prevValue)
             OnValueIncreased();
-        else if (FloatValue < PrevFloatValue)
+        else if (Value < prevValue)
             OnValueDecreased();
         if (IsEmpty)
             OnValueEmpty();
         if (IsFull)
             OnValueFull();
-    }
-
-    float ConvertValueToFloat(object _value)
-    {
-        if (_value is float) return (float)_value;
-        if (_value is int) return (int)_value;
-        Debug.LogError("Could not convert value!");
-        return 0;
     }
 }

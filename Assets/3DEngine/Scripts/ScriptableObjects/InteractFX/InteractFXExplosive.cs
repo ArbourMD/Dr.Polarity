@@ -15,16 +15,16 @@ public class InteractFXExplosive : InteractFX
         DoExplosion(_sender.transform.position);
     }
 
-    void DoExplosion(Vector2 _pos)
+    void DoExplosion(Vector3 _pos)
     {
         if (explosionFXSpawn)
             Instantiate(explosionFXSpawn, _pos, Quaternion.identity);
 
-        Collider2D[] cols = Physics2D.OverlapCircleAll(_pos, explosionRadius, mask);
+        Collider[] cols = Physics.OverlapSphere(_pos, explosionRadius, mask);
         foreach (var col in cols)
         {
-            var dir = ((Vector2)col.bounds.center - _pos).normalized;
-            var rb = col.GetComponent<Rigidbody2D>();
+            var dir = (col.bounds.center - _pos).normalized;
+            var rb = col.GetComponent<Rigidbody>();
             if (rb)
             {
                 rb.velocity = dir * explosiveForce;

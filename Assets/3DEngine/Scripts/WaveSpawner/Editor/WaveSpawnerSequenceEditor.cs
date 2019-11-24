@@ -10,6 +10,7 @@ public class WaveSpawnerSequenceEditor : Editor
     protected SerializedObject sourceRef;
 
     protected SerializedProperty viewStats;
+    protected SerializedProperty beginOnStart;
     protected SerializedProperty spawnables;
     protected SerializedProperty spawnLocations;
     protected SerializedProperty waves;
@@ -33,6 +34,7 @@ public class WaveSpawnerSequenceEditor : Editor
     public virtual void GetProperties()
     {
         viewStats = sourceRef.FindProperty("viewStats");
+        beginOnStart = sourceRef.FindProperty("beginOnStart");
         spawnables = sourceRef.FindProperty("spawnables");
         spawnLocations = sourceRef.FindProperty("spawnLocations");
         waves = sourceRef.FindProperty("waves");
@@ -47,7 +49,7 @@ public class WaveSpawnerSequenceEditor : Editor
             if (viewStats.boolValue)
                 DisplayStats();
         }
-        
+        EditorGUILayout.PropertyField(beginOnStart);
         spawnables.ArrayFieldButtons("Spawn", false, false, true, false, DisplaySpawnables);
         spawnLocations.ArrayFieldButtons("Location", true, false, true, true, DisplaySpawnLocations);
         EditorGUILayout.LabelField("--------------");

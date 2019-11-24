@@ -57,7 +57,7 @@ public class EngineEvent
     public GameObject Source { get { return source as GameObject; } }
     private GameObject curTarget;
     public GameObject CurTarget { get { return curTarget; } }
-
+    public GameObject Visitor { get; private set; }
     private bool paused;
 
     public void DoEvent(GameObject _source, object _events, int _eventIndex, GameObject _receiver = null)
@@ -65,6 +65,7 @@ public class EngineEvent
         paused = false;
         source = _source;
         events = _events;
+        Visitor = _receiver;
         eventInd = _eventIndex;
         active = true;
         finished = false;
