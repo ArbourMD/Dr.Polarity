@@ -96,8 +96,8 @@ MonoBehaviour:
   muzzlePosInd: 1
   aimFX: {fileID: 11400000, guid: 9152f8ad3a1a5a04fb0e16bc3f9f9db0, type: 2}
   projectilePreview: 1
-  previewLine: {fileID: 120990279226039932, guid: 80eb3f1bd8fcfa34693f01238c7f8729,
-    type: 3}
+  aimLineFX: {fileID: 11400000, guid: 6db7f8f374c999c478cb7665dfc6888e, type: 2}
+  previewHit: {fileID: 1780334057066656, guid: 4fbe94f0d0c1bcf438e16528d90d88b4, type: 3}
   ricochetAmount: 5
   fireType: 0
   damage: 1

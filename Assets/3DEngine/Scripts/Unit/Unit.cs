@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using MEC;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -17,6 +18,8 @@ public class Unit : EngineEntity
     [SerializeField] protected ItemLocationData spawnLocationData = null;
     [SerializeField] protected ChildName[] spawnLocations = null;
     public ChildName[] SpawnLocations { get { return spawnLocations; } set { spawnLocations = value; } }
+    [SerializeField] protected bool respawnOnDeath = true;
+    [SerializeField] protected float respawnTime = 2;
 
     protected bool stunned;
     public bool IsStunned { get { return stunned; } }
@@ -313,15 +316,27 @@ public class Unit : EngineEntity
 
     public override void Die(string _reason = default)
     {
+        if (dead)
+            return;
+
         base.Die();
         dead = true;
         ActivateAllBuffs(false);
+        if (respawnOnDeath)
+            Respawn();
+        if (IsInSpawnWave)
+            spawnerManager.RemoveSpawnAmount();
     }
 
     public override void Respawn()
     {
         base.Respawn();
-        dead = false;
+        Timing.RunCoroutine(StartRespawn().CancelWith(gameObject));
+    }
+
+    IEnumerator<float> StartRespawn()
+    {
+        yield return Timing.WaitForSeconds(respawnTime);
         ResetUnitPosition(spawnPos);
     }
 
@@ -333,6 +348,7 @@ public class Unit : EngineEntity
             rb.Sleep();
         if (col)
             col.enabled = true;
+        dead = false;
     }
 
     void ResetLevel()

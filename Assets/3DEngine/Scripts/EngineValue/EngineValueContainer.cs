@@ -5,9 +5,6 @@ using UnityEngine;
 [System.Serializable]
 public class EngineValueContainer
 {
-    public List<EngineFloat> engineFloats = new List<EngineFloat>();
-    public List<EngineInt> engineInts = new List<EngineInt>();
-
     protected List<EngineValue> allValues = new List<EngineValue>();
 
     public virtual void InitializeContainer(EngineValueDataManager _valueManager, EngineValueSelection[] _selections)
@@ -111,7 +108,7 @@ public class EngineValueContainer
         for (int i = 0; i < allValues.Count; i++)
         {
             if (_valueName == allValues[i].Data.name)
-                return allValues[i].FloatValue;
+                return allValues[i].Value;
         }
         Debug.LogError("could not find value with data name: " + _valueName + "!");
         return 0;
@@ -143,7 +140,6 @@ public class EngineValueContainer
 
     void ClearAllValues()
     {
-        engineFloats.Clear();
-        engineInts.Clear();
+        allValues.Clear();
     }
 }

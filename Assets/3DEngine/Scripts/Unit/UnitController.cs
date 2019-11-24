@@ -26,6 +26,8 @@ public class UnitController : MonoBehaviour
     [SerializeField] protected MovementStateType curMovementState = MovementStateType.Idle;
     [SerializeField] protected Transform target = null;
     [SerializeField] protected bool doDefaultMovementIfNoTargets = true;
+    [SerializeField] protected bool resetToStartPositionIfNoTargets;
+    private Vector3 startPos;
     protected Transform curChaseTarget;
     public Transform CurChaseTarget { get { return curChaseTarget; } set { curChaseTarget = value; } }
     protected Transform curFleeTarget;
@@ -128,6 +130,7 @@ public class UnitController : MonoBehaviour
     [SerializeField] protected float sideDetectDistanceMultiplier = 0.6f;
     [SerializeField] protected LayerMask slowMask;
     [SerializeField] protected float slowMultiplier = 0.1f;
+    protected float curSlowMultiplier;
     [SerializeField] protected LayerProperty ladderLayer;
     protected Collider[] sideCols;
 
@@ -240,14 +243,14 @@ public class UnitController : MonoBehaviour
 
     public virtual void InitializeController()
     {
+        curSlowMultiplier = slowMultiplier;
+        startPos = transform.position;
+
         curSpeed = baseSpeed;
         curGroundCenter = groundBoxCenter;
 
         if (target)
             curChaseTarget = target;
-
-        //set Direction
-        transform.rotation = Quaternion.Euler(Vector3.zero);
 
         if (controllerType == BaseControllerType.NavAgent && agent && rb)
             rb.isKinematic = true;
@@ -868,14 +871,14 @@ public class UnitController : MonoBehaviour
             }
 
             if (slowCols)
-                speedMultiplier = slowMultiplier;
+                curSlowMultiplier = slowMultiplier;
 
             if (climbingDetect == ClimbingDetectType.SideDetection)
                 onLadder = anyLadder;
         }
         else
         {
-            speedMultiplier = 1;
+            curSlowMultiplier = 1;
             if (climbingDetect == ClimbingDetectType.SideDetection)
                 onLadder = false;
         }
@@ -922,6 +925,11 @@ public class UnitController : MonoBehaviour
         else if (defaultMovement == MovementStateType.Patrol)
         {
             NextPatrolPoint();
+        }
+        else if (defaultMovement == MovementStateType.Idle)
+        {
+            if (resetToStartPositionIfNoTargets)
+                agent.SetDestination(startPos);
         }
 
     }
@@ -990,6 +998,8 @@ public class UnitController : MonoBehaviour
 
     public virtual void SetCurMovementState(MovementStateType _movement)
     {
+        if (!agent)
+            return;
         if (curMovementState == _movement)
             return;
         if (agent.isActiveAndEnabled)

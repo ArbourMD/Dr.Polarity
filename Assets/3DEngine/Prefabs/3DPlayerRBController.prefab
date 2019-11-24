@@ -90,6 +90,8 @@ MonoBehaviour:
   childSkinOverride: {fileID: 0}
   spawnLocationData: {fileID: 0}
   spawnLocations: []
+  respawnOnDeath: 1
+  respawnTime: 2
   setData: 1
   userMode: 0
   userDataManager: {fileID: 0}
@@ -116,6 +118,7 @@ MonoBehaviour:
   curMovementState: 0
   target: {fileID: 0}
   doDefaultMovementIfNoTargets: 1
+  resetToStartPositionIfNoTargets: 0
   entityDataManager: {fileID: 0}
   chasePriorities: []
   fleePriorities: []
@@ -406,34 +409,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputType: 1
   autoEquipItems: 1
-  setAllItemsActive: 1
-  maxItems: 2
+  setAllItemsActive: 0
+  maxItems: 1
   disablePickupIfFull: 1
   itemManager: {fileID: 11400000, guid: cdd949be733b00d46a70ea88e3806ff1, type: 2}
   itemsToAdd:
-  - itemName: WeaponPush
-    indexValue: 16
-    itemNames:
-    - Buildable
-    - Draggable
-    - Drawable
-    - DiscGun
-    - ForceGun
-    - ForcePush
-    - GunEnemy
-    - GunPlayer
-    - HookShot
-    - ItemButtonPress
-    - ItemInteractFX
-    - Shield
-    - TimeSlow
-    - '[null]'
-    - WeaponMelee
-    - Torch
-    - WeaponPush
-    - WeaponPush2
-  - itemName: WeaponPush2
-    indexValue: 17
+  - itemName: '[null]'
+    indexValue: 13
     itemNames:
     - Buildable
     - Draggable
@@ -463,8 +445,6 @@ MonoBehaviour:
   quickMenuButtons:
   - stringValue: Quick1
     indexValue: 22
-  - stringValue: Quick2
-    indexValue: 23
   interactButton:
     stringValue: Fire2
     indexValue: 3

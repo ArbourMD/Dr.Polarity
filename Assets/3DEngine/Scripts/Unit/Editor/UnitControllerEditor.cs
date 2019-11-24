@@ -23,6 +23,8 @@ public class UnitControllerEditor : Editor
     protected SerializedProperty curMovementState;
     protected SerializedProperty targetTrans;
     protected SerializedProperty doDefaultMovementIfNoTargets;
+    protected SerializedProperty resetToStartPositionIfNoTargets;
+    
 
     //priorities
     protected SerializedProperty entityDataManager;
@@ -108,6 +110,7 @@ public class UnitControllerEditor : Editor
         curMovementState = sourceRef.FindProperty("curMovementState");
         targetTrans = sourceRef.FindProperty("target");
         doDefaultMovementIfNoTargets = sourceRef.FindProperty("doDefaultMovementIfNoTargets");
+        resetToStartPositionIfNoTargets = sourceRef.FindProperty("resetToStartPositionIfNoTargets");
 
         //priorities
         entityDataManager = sourceRef.FindProperty("entityDataManager");
@@ -204,6 +207,8 @@ public class UnitControllerEditor : Editor
             EditorGUILayout.LabelField("Movement State: " + curMovementState.enumDisplayNames[curMovementState.enumValueIndex]);
         EditorGUILayout.PropertyField(defaultMovement);
         EditorGUILayout.PropertyField(doDefaultMovementIfNoTargets);
+        if (defaultMovement.enumValueIndex == (int)UnitController.MovementStateType.Idle)
+            EditorGUILayout.PropertyField(resetToStartPositionIfNoTargets);
 
         //patrolling
         if (defaultMovement.enumValueIndex == 1)

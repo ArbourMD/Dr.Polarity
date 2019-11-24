@@ -210,6 +210,7 @@ public class EngineEventExtensions
             EditorGUILayout.PropertyField(delay);
         else if (eventType.enumValueIndex == (int)EngineEventOptionCommon.CommonEventType.Spawn)
         {
+            EditorGUILayout.PropertyField(objToSpawn);
             EditorGUILayout.PropertyField(positionType);
             if (positionType.enumValueIndex == (int)EngineEventOptionCommon.PositionType.Vector3)
             {
@@ -375,8 +376,10 @@ public class EngineEventExtensions
         var state = _property.FindPropertyRelative("state");
         var targetType = _property.FindPropertyRelative("targetType");
         var implementType = _property.FindPropertyRelative("implementType");
+        var propertyType = _property.FindPropertyRelative("propertyType");
+        var value = _property.FindPropertyRelative("value");
+        var enabled = _property.FindPropertyRelative("enabled");
 
-        
 
         EditorGUILayout.PropertyField(affectController);
         if (affectController.enumValueIndex == (int)EngineEventOptionController.AffectControllerType.Target)
@@ -395,7 +398,23 @@ public class EngineEventExtensions
             var sNames = System.Enum.GetNames(typeof(UnitController.MovementStateType));
             optionName.stringValue = "Set State: " + sNames[state.enumValueIndex];
         }
-            
+        else if (affectController.enumValueIndex == (int)EngineEventOptionController.AffectControllerType.Properties)
+        {
+            EditorGUILayout.PropertyField(propertyType);
+           if (propertyType.enumValueIndex == (int)EngineEventOptionController.PropertyType.Speed ||
+                propertyType.enumValueIndex == (int)EngineEventOptionController.PropertyType.SpeedMultiplier)
+            {
+                EditorGUILayout.PropertyField(value);
+            }
+            else if (propertyType.enumValueIndex == (int)EngineEventOptionController.PropertyType.EnableJump ||
+                 propertyType.enumValueIndex == (int)EngineEventOptionController.PropertyType.EnableMovement)
+            {
+                EditorGUILayout.PropertyField(enabled);
+            }
+            var pNames = System.Enum.GetNames(typeof(EngineEventOptionController.PropertyType));
+            optionName.stringValue = "Set Property: " + pNames[propertyType.enumValueIndex];
+        }
+
 
     }
 }

@@ -12,6 +12,8 @@ public abstract class DetectZoneTrigger : MonoBehaviour
 
     private List<Collider> enteredCols = new List<Collider>();
 
+    public Collider[] EnteredColliders { get { return detectZone.EnteredColliders; } }
+
     protected virtual void Start()
     {
         detectZone.AddEnterTrigger(gameObject, OnEnter);

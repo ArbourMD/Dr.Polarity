@@ -35,7 +35,10 @@ public class ItemWeaponRanged : ItemAimable, IUsable
             return;
         inUse = true;
         if (Data.fireType == ItemWeaponRangedData.FireType.Single)
-                UseWeapon();
+        {
+            UseWeapon();
+            Stop();
+        }        
         else
             fireCoroutine = fireCoroutine.ReplayCoroutine(StartFire());
         

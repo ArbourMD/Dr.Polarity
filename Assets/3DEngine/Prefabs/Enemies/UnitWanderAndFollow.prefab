@@ -200,6 +200,8 @@ MonoBehaviour:
     parent: {fileID: 3470528444608307846}
     stringValue: SpawnLocation
     indexValue: 1
+  respawnOnDeath: 1
+  respawnTime: 2
 --- !u!114 &3470528444888811141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,7 +220,8 @@ MonoBehaviour:
   defaultMovement: 2
   curMovementState: 0
   target: {fileID: 0}
-  doDefaultMovementIfNoTargets: 0
+  doDefaultMovementIfNoTargets: 1
+  resetToStartPositionIfNoTargets: 1
   entityDataManager: {fileID: 0}
   chasePriorities: []
   fleePriorities: []
@@ -307,7 +310,7 @@ MonoBehaviour:
     size: {x: 0, y: 0, z: 0}
     useTransformAngle: 0
     angle: {x: 0, y: 0, z: 0}
-    radius: 9.96
+    radius: 5.22
     height: 0
     overrideColor: 0
     debugColor: {r: 1, g: 0.46219245, b: 0, a: 1}
@@ -338,7 +341,7 @@ MonoBehaviour:
     handlePoint: {x: 0, y: 0, z: 0}
   preTriggers: []
   triggers:
-  - triggerName: Trigger 0 | PlayerDetect | OnStay
+  - triggerName: 'Trigger 0 | 0: PlayerDetect | OnStay'
     triggerType: 1
     detectZoneInd: 0
     onStayOption: 0
@@ -378,7 +381,7 @@ MonoBehaviour:
     engineEvents:
     - eventName: Event 1
       sceneObject:
-        sceneObjectType: 2
+        sceneObjectType: 1
         overrideGameObject: {fileID: 0}
         closestTag: 
         nameToFind: 
@@ -405,6 +408,9 @@ MonoBehaviour:
         state: 0
         targetType: 0
         implementType: 0
+        propertyType: 0
+        value: 0
+        enabled: 0
       - optionName: 'Set State: Chase'
         affectedObj: 0
         overrideObject: {fileID: 0}
@@ -412,6 +418,9 @@ MonoBehaviour:
         state: 4
         targetType: 0
         implementType: 0
+        propertyType: 0
+        value: 0
+        enabled: 0
       detectZoneInd: 0
       delay: 0
       repeat: 0
@@ -422,7 +431,7 @@ MonoBehaviour:
       finished: 0
     receivers: []
     receiverIndMask: 0
-  - triggerName: Trigger 1 | PlayerDetect | OnExit
+  - triggerName: 'Trigger 1 | 0: PlayerDetect | OnExit'
     triggerType: 2
     detectZoneInd: 0
     onStayOption: 0
@@ -462,7 +471,7 @@ MonoBehaviour:
     engineEvents:
     - eventName: Event 1
       sceneObject:
-        sceneObjectType: 2
+        sceneObjectType: 1
         overrideGameObject: {fileID: 0}
         closestTag: 
         nameToFind: 
@@ -485,6 +494,9 @@ MonoBehaviour:
         state: 0
         targetType: 0
         implementType: 1
+        propertyType: 0
+        value: 0
+        enabled: 0
       detectZoneInd: 0
       delay: 0
       repeat: 0
@@ -535,7 +547,7 @@ MonoBehaviour:
     engineEvents:
     - eventName: Event 1
       sceneObject:
-        sceneObjectType: 2
+        sceneObjectType: 1
         overrideGameObject: {fileID: 0}
         closestTag: 
         nameToFind: 
@@ -558,7 +570,7 @@ MonoBehaviour:
           triggerBroadcastType: 1
           triggerOption: 2
           triggerSingle:
-            stringValue: Trigger 0 | PlayerDetect | OnStay
+            stringValue: '0: Trigger 0 | 0: PlayerDetect | OnStay'
             indexValue: 0
             stringValues: []
           triggerMask: 0
@@ -581,6 +593,9 @@ MonoBehaviour:
         state: 0
         targetType: 2
         implementType: 0
+        propertyType: 0
+        value: 0
+        enabled: 0
       - optionName: 'Set State: LookAt'
         affectedObj: 0
         overrideObject: {fileID: 0}
@@ -588,6 +603,9 @@ MonoBehaviour:
         state: 3
         targetType: 2
         implementType: 0
+        propertyType: 0
+        value: 0
+        enabled: 0
       detectZoneInd: 0
       delay: 0
       repeat: 0
@@ -638,7 +656,7 @@ MonoBehaviour:
     engineEvents:
     - eventName: Event 1
       sceneObject:
-        sceneObjectType: 2
+        sceneObjectType: 1
         overrideGameObject: {fileID: 0}
         closestTag: 
         nameToFind: 
@@ -661,7 +679,7 @@ MonoBehaviour:
           triggerBroadcastType: 1
           triggerOption: 1
           triggerSingle:
-            stringValue: '0: Trigger 0 | PlayerDetect | OnStay'
+            stringValue: '0: Trigger 0 | 0: PlayerDetect | OnStay'
             indexValue: 0
             stringValues: []
           triggerMask: 0
@@ -684,6 +702,9 @@ MonoBehaviour:
         state: 0
         targetType: 0
         implementType: 0
+        propertyType: 0
+        value: 0
+        enabled: 0
       - optionName: 'Set Target: LookAt | Remove'
         affectedObj: 0
         overrideObject: {fileID: 0}
@@ -691,6 +712,9 @@ MonoBehaviour:
         state: 0
         targetType: 2
         implementType: 1
+        propertyType: 0
+        value: 0
+        enabled: 0
       detectZoneInd: 0
       delay: 0
       repeat: 0

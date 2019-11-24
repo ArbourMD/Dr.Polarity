@@ -10,9 +10,6 @@ public class Player : Unit
     [SerializeField] private UserDataManager userDataManager;
     [SerializeField] private IndexStringProperty user = null;
 
-    private int curPoints;
-    public int CurPoints { get { return curPoints; } }
-
     public new UIPlayer UI { get { return (UIPlayer)ui; } }
     private UserDataManager dataManager;
     private SpawnCheckPointManager spawnManager;
@@ -81,13 +78,6 @@ public class Player : Unit
         base.SpawnUI();
         if (ui)
             GameManager.instance.SpawnedUI = (UIPlayer)ui;
-    }
-
-    public void AddPoints(int _amount)
-    {
-        curPoints += _amount;
-        //if (UI)
-            //UI.SetPointsValue(curPoints);
     }
 
     public override void Die(string _reason)

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PointsManager : MonoBehaviour
 {
-    public EngineFloatData pointsData;
-    public float CurPoints { get { return pointsData.FloatValue; } }
+    public EngineValueData pointsData;
+    public float CurPoints { get { return pointsData.Value; } }
     public bool dontDestroyOnLoad;
 
     public static PointsManager instance;

@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b80af6bc853b82e43ae9f74d7cdcc69f, type: 3}
-  m_Name: PlayerHealth
+  m_Script: {fileID: 11500000, guid: 777fa8f27ca674e42b092c272acf3df3, type: 3}
+  m_Name: PlayerLivesNew
   m_EditorClassIdentifier: 
   valueUIType: 0
+  value: 3
   minValue: 0
-  maxValue: 5
-  id: 1000010000
-  floatValue: 5
+  maxValue: 3
+  id: 1000110000

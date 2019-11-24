@@ -731,9 +731,8 @@ public class PlayerController : UnitController
             return;
         }
 
-        var speed = curSpeed * speedMultiplier;
-        var movement = movementInput * speed;
-            
+        var speed = curSpeed * speedMultiplier * curSlowMultiplier;
+        var movement = movementInput * speed;  
 
         if (controllerType == BaseControllerType.Rigidbody)
         {

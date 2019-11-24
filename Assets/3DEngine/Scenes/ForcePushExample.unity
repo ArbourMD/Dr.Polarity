@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.42744896, g: 0.46073425, b: 0.4887805, a: 1}
+  m_IndirectSpecularColor: {r: 0.42744872, g: 0.46073443, b: 0.48878014, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3765,6 +3765,255 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
+--- !u!1001 &1286288911
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3470528444888811139, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: m_Name
+      value: UnitIdleAndFollow
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811258, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811258, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811258, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811258, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811258, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811258, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811258, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.000000029802319
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811258, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811258, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811258, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -180.00002
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811258, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: detectZones.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: triggers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: triggers.Array.data[0].engineEvents.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: triggers.Array.data[0].engineEvents.Array.data[0].interacts.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: triggers.Array.data[0].engineEvents.Array.data[0].controllerOptions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: detectZones.Array.data[0].radius
+      value: 3.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: triggers.Array.data[0].triggerName
+      value: 'Trigger 0 | 0: PlayerDetect | OnEnter'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: detectZones.Array.data[0].zoneName
+      value: PlayerDetect
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: detectZones.Array.data[0].detectMask.m_Bits
+      value: 2048
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: detectZones.Array.data[0].ignoreTriggerColliders
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: detectZones.Array.data[0].debugColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: detectZones.Array.data[0].debugColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: detectZones.Array.data[0].debugColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: detectZones.Array.data[0].debugColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: triggers.Array.data[0].triggerType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: triggers.Array.data[0].validationMask
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: triggers.Array.data[0].validationTag.stringValue
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: triggers.Array.data[0].angle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: triggers.Array.data[0].obstacleLayer.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: triggers.Array.data[0].eyesOffset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: triggers.Array.data[0].lookLocationOffset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: triggers.Array.data[0].engineEvents.Array.data[0].eventName
+      value: Event 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: triggers.Array.data[0].engineEvents.Array.data[0].sceneObject.sceneObjectType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: triggers.Array.data[0].engineEvents.Array.data[0].eventTypeMask
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: triggers.Array.data[0].engineEvents.Array.data[0].controllerOptions.Array.data[0].affectController
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: triggers.Array.data[0].engineEvents.Array.data[0].controllerOptions.Array.data[0].propertyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: triggers.Array.data[0].engineEvents.Array.data[0].controllerOptions.Array.data[0].value
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: triggers.Array.data[1].triggerName
+      value: 'Trigger 1 | 0: PlayerDetect | OnExit'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: triggers.Array.data[1].triggerType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: triggers.Array.data[1].validationTag.stringValue
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: triggers.Array.data[1].engineEvents.Array.data[0].controllerOptions.Array.data[0].optionName
+      value: 'Set Target: Chase | Add'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: triggers.Array.data[1].engineEvents.Array.data[0].controllerOptions.Array.data[0].affectController
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: triggers.Array.data[1].engineEvents.Array.data[0].controllerOptions.Array.data[0].implementType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: triggers.Array.data[1].engineEvents.Array.data[0].controllerOptions.Array.data[0].propertyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: triggers.Array.data[1].engineEvents.Array.data[0].controllerOptions.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470528444888811141, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
+        type: 3}
+      propertyPath: defaultMovement
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b0a46df6009edd24aa1f75c9a34d6cf4, type: 3}
 --- !u!1 &1430980072
 GameObject:
   m_ObjectHideFlags: 0
@@ -4361,6 +4610,165 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1718170963
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1718170965}
+  - component: {fileID: 1718170964}
+  m_Layer: 0
+  m_Name: AerialDropExample
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1718170964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718170963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1f90ba81799e9e4797a4282afc748d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType: 0
+  detectZones:
+  - zoneName: Detect Zone 0
+    overrideZoneName: 0
+    overrideLabel: 0
+    overrideDetectMask: 0
+    detectMask:
+      serializedVersion: 2
+      m_Bits: 2048
+    ignoreTriggerColliders: 0
+    overrideDetectType: 0
+    detectType: 1
+    colliderToUse: {fileID: 0}
+    overridePositionType: 0
+    positionType: 0
+    trans: {fileID: 0}
+    worldPos: {x: 0, y: 0, z: 0}
+    offset: {x: 0, y: -1.65, z: 0}
+    size: {x: 1, y: 3, z: 1}
+    useTransformAngle: 0
+    angle: {x: 0, y: 0, z: 0}
+    radius: 0
+    height: 0
+    overrideColor: 0
+    debugColor: {r: 1, g: 1, b: 1, a: 1}
+    handlePoint: {x: 0, y: 0, z: 0}
+  preTriggers: []
+  triggers:
+  - triggerName: 'Trigger 0 | 0: Detect Zone 0 | OnStay'
+    triggerType: 1
+    detectZoneInd: 0
+    onStayOption: 1
+    repeatDelay: 1
+    input:
+      stringValue: 
+      indexValue: 0
+    validationMask: 0
+    validationLayer:
+      serializedVersion: 2
+      m_Bits: 0
+    validationTag:
+      stringValue: 
+    engineValueDataManager: {fileID: 0}
+    selection:
+      selectionName: 
+      category:
+        stringValue: 
+        indexValue: 0
+        stringValues: []
+      engineValue:
+        stringValue: 
+        indexValue: 0
+        stringValues: []
+      valueData: {fileID: 0}
+    valueOption: 0
+    comparedValue: 0
+    angle: 0
+    obstacleLayer:
+      serializedVersion: 2
+      m_Bits: 0
+    eyesOffset: {x: 0, y: 0, z: 0}
+    lookLocationOffset: {x: 0, y: 0, z: 0}
+    activationAmount: 0
+    maxActivations: 0
+    activationType: 0
+    engineEvents:
+    - eventName: Event 1
+      sceneObject:
+        sceneObjectType: 1
+        overrideGameObject: {fileID: 0}
+        closestTag: 
+        nameToFind: 
+      startType: 0
+      inputButton:
+        stringValue: 
+        indexValue: 0
+      eventTypeMask: 1
+      commons:
+      - optionName: 
+        affectedObj: 0
+        overrideObject: {fileID: 0}
+        eventType: 2
+        active: 0
+        delay: 0
+        objToSpawn: {fileID: 1394969629413380, guid: bf8fdcebf05a28145aa1bccc8a1d4918,
+          type: 3}
+        positionType: 0
+        position: {x: 0, y: 0, z: 0}
+        rotation: {x: 0, y: 0, z: 0}
+        positionObj:
+          sceneObjectType: 1
+          overrideGameObject: {fileID: 0}
+          closestTag: 
+          nameToFind: 
+        setParent: 0
+        parentObj:
+          sceneObjectType: 0
+          overrideGameObject: {fileID: 0}
+          closestTag: 
+          nameToFind: 
+      anims: []
+      methods: []
+      interacts: []
+      eventOptions: []
+      valueDeltaOptions: []
+      controllerOptions: []
+      detectZoneInd: 0
+      delay: 0
+      repeat: 0
+      repeatTime: 0
+      finishType: 0
+      totalTime: 0
+      active: 0
+      finished: 0
+    receivers: []
+    receiverIndMask: 0
+--- !u!4 &1718170965
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718170963}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8, y: 4, z: -7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1757731437
 Mesh:
   m_ObjectHideFlags: 0
@@ -4881,11 +5289,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3470528444888811140, guid: b0a46df6009edd24aa1f75c9a34d6cf4,
-        type: 3}
-      propertyPath: detectZones.Array.data[0].radius
-      value: 5.22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0a46df6009edd24aa1f75c9a34d6cf4, type: 3}
