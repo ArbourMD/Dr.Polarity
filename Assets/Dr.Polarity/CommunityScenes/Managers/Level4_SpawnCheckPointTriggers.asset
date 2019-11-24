@@ -258,7 +258,7 @@ MonoBehaviour:
     overrideColor: 0
     debugColor: {r: 1, g: 0, b: 0, a: 1}
     handlePoint: {x: 0, y: 0, z: 0}
-  playerSpawn: {fileID: 329008192852583964, guid: ace9f263e6d90a24698c946b2189c5d6,
+  playerSpawn: {fileID: 329008192852583964, guid: 9c2d8dcdb43a21b44b6a68f3d38879e4,
     type: 3}
   progressOnly: 0
   saveProgressToDisc: 0

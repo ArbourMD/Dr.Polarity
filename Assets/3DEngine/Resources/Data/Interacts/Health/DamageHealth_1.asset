@@ -21,15 +21,14 @@ MonoBehaviour:
   valueManager: {fileID: 11400000, guid: 0eb7e98275f9ac34ea499fe1799e6600, type: 2}
   selectionType: 0
   valueSelection:
-    selectionName: Health | PlayerHealth
+    selectionName: Health | PlayerHP
     category:
       stringValue: Health
       indexValue: 0
       stringValues: []
     engineValue:
-      stringValue: PlayerHealth
+      stringValue: PlayerHP
       indexValue: 0
       stringValues: []
     valueData: {fileID: 11400000, guid: 095945809c382254c8ea07deb65d9820, type: 2}
-    id: 1000010000
   valueDelta: -1

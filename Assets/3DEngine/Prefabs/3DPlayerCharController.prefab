@@ -66,17 +66,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 0}
-  skinOptions: 0
+  spawnUI: 2
+  UIToSpawn: {fileID: 0}
+  parentUIToUnit: 0
+  attackTarget: {fileID: 0}
+  skinOptions: 3
   spawnSkinOverride: {fileID: 0}
   childSkinOverride: {fileID: 0}
   spawnLocationData: {fileID: 0}
   spawnLocations: []
-  spawnUI: 0
-  UIToSpawn: {fileID: 0}
-  parentUIToUnit: 0
-  disableOnDeath: []
-  attackTarget: {fileID: 0}
-  setData: 1
+  respawnOnDeath: 1
+  respawnTime: 2
+  setData: 0
   userMode: 0
   userDataManager: {fileID: 0}
   user:
@@ -95,16 +96,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62d642782aaa50d4cbf0f0feb9e49b37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controllerType: 1
+  controllerType: 0
+  moveForceType: 0
+  agent: {fileID: 0}
   defaultMovement: 0
-  curMovement: 0
+  curMovementState: 0
   target: {fileID: 0}
   doDefaultMovementIfNoTargets: 1
+  resetToStartPositionIfNoTargets: 0
   entityDataManager: {fileID: 0}
   chasePriorities: []
   fleePriorities: []
   lookAtPriorities: []
-  patrolType: 0
+  patrolType: 2
   patrolDatas: []
   patrolPoints: []
   wanderRadius: 3
@@ -114,62 +118,85 @@ MonoBehaviour:
   fleeIntervalCheckTime: 1
   fleeSearchDistance: 10
   arrivalDistance: 0.1
-  arrivalTime: 0
+  arrivalTime: 0.1
   stuckCheckTime: 5
   rotSensitivity: 5
   ignoreLeanRotation: 1
   enableClimbing: 1
   climbingDetect: 0
-  climbSpeed: 15
+  climbSpeed: 6
   climbing: 0
-  inAirControlTime: 2
-  addedGravityType: 1
-  forceAmount: 20
+  inAirControlTime: 1
+  addedGravityType: 0
+  forceAmount: 0
   forceDirection: {x: 0, y: -1, z: 0}
   useCharacterControllerGroundDetection: 0
   groundMask:
     serializedVersion: 2
-    m_Bits: 65792
+    m_Bits: 4294967295
   platformMask:
     serializedVersion: 2
-    m_Bits: 65536
-  groundBoxSize: {x: 0.8, y: 0.15, z: 0.8}
+    m_Bits: 4294967295
+  groundBoxSize: {x: 1, y: 1, z: 1}
   groundBoxCenter: {x: 0, y: 0, z: 0}
   sideMask:
     serializedVersion: 2
-    m_Bits: 4194560
-  sideDetectCenter: {x: 0, y: 1, z: 0}
+    m_Bits: 4294967295
+  sideDetectCenter: {x: 0, y: 0, z: 0}
   idleDetectRadius: 0.3
   movingDetectRadius: 0.3
-  sideDetectHeight: 1.3
+  sideDetectHeight: 0.6
   sideDetectDistanceMultiplier: 0.6
   slowMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
   slowMultiplier: 0.1
   ladderLayer:
-    indexValue: 22
-    stringValue: Ladder
+    indexValue: 0
+    stringValue: Default
     maskValue:
       serializedVersion: 2
-      m_Bits: 4194304
-  baseSpeed: 0
+      m_Bits: 1
+  baseSpeed: 1
   enableJump: 1
+  horizontalInput:
+    stringValue: Horizontal
+    indexValue: 0
+  verticalInput:
+    stringValue: Horizontal
+    indexValue: 0
+  rawInputValues: 1
   constantSpeed: 0
   forwardZMovementOnly: 0
   enableJoystickUse: 1
+  keyboardAimInputHor:
+    stringValue: Horizontal
+    indexValue: 0
+  keyboardAimInputVer:
+    stringValue: Horizontal
+    indexValue: 0
+  joystickAimInputHor:
+    stringValue: Horizontal
+    indexValue: 0
+  joystickAimInputVer:
+    stringValue: Horizontal
+    indexValue: 0
+  invertY: 0
   enableRun: 1
   runButton:
-    stringValue: Run
-    indexValue: 18
+    stringValue: Horizontal
+    indexValue: 0
   backwardSpeed: 3
-  enableMovementSmoothing: 1
-  moveSensitivity: 15
+  enableMovementSmoothing: 0
+  moveSensitivity: 0
+  enableCameraSwitching: 0
+  cameraSwitch:
+    cameraSwitchers: []
   rotationType: 1
   clampYRotation: 0
   yRotationLimit: 90
-  enableRotSmoothing: 1
-  turnSensitivity: 5
+  enableRotSmoothing: 0
+  turnSensitivity: 0
   defaultAimMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -185,18 +212,18 @@ MonoBehaviour:
     m_Bits: 0
   enableCrouch: 1
   crouchButton:
-    stringValue: Crouch
-    indexValue: 31
+    stringValue: Horizontal
+    indexValue: 0
   toggleCrouch: 0
-  crouchTime: 0.1
+  crouchTime: 0.5
   crouchSpeed: 2
   crouchSpeedTime: 1
   jumpButton:
-    stringValue: Jump
-    indexValue: 5
-  jumpStyle: 2
+    stringValue: Horizontal
+    indexValue: 0
+  jumpStyle: 0
   enableDoubleJump: 0
-  enableJumpClimbing: 0
+  enableJumpClimbing: 1
   gravityMultiplier: 0
   lowJumpMultiplier: 0
   jumpCurve:
@@ -205,38 +232,47 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 2.7920861
-      outSlope: 2.7920861
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.09529769
+      outWeight: 0
     - serializedVersion: 3
       time: 1
       value: 0
-      inSlope: -4.978868
-      outSlope: -4.978868
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.07869924
+      inWeight: 0
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
   jumpTime: 0.3
-  enableDash: 1
+  enableDash: 0
   dashButton:
-    stringValue: Fire2
-    indexValue: 3
-  dashPower: 50
-  dashTime: 0.1
-  dashCooldown: 0
+    stringValue: 
+    indexValue: 0
+  dashPower: 10
+  dashTime: 0.5
+  dashCooldown: 2
+  enableRoll: 0
+  rollButton:
+    stringValue: 
+    indexValue: 0
+  rollHeight: 1
+  heightTransTime: 0.1
+  rollPower: 10
+  rollTime: 0.5
+  rollCooldown: 2
   ceilingMask:
     serializedVersion: 2
-    m_Bits: 0
-  ceilingBoxSize: {x: 0.8, y: 0.1, z: 0.8}
-  ceilingBoxCenter: {x: 0, y: 1, z: 0}
-  curCeilingBoxCenter: {x: 0, y: 2, z: 0}
+    m_Bits: 4294967295
+  ceilingBoxSize: {x: 0, y: 0, z: 0}
+  ceilingBoxCenter: {x: 0, y: 0, z: 0}
+  curCeilingBoxCenter: {x: 0, y: 0, z: 0}
 --- !u!114 &114219911752550862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,45 +286,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputType: 1
-  autoEquipItems: 1
+  autoEquipItems: 0
   setAllItemsActive: 0
-  maxItems: 1
+  maxItems: 4
   disablePickupIfFull: 1
-  itemManager: {fileID: 11400000, guid: cdd949be733b00d46a70ea88e3806ff1, type: 2}
-  itemsToAdd:
-  - itemName: GunPlayer
-    indexValue: 7
-    itemNames:
-    - Buildable
-    - Draggable
-    - Drawable
-    - DiscGun
-    - ForceGun
-    - ForcePush
-    - GunEnemy
-    - GunPlayer
-    - HookShot
-    - ItemButtonPress
-    - ItemInteractFX
-    - Shield
-    - TimeSlow
-    - '[null]'
-    - WeaponMelee
-    - Torch
-    - '[null]'
+  itemManager: {fileID: 0}
+  itemsToAdd: []
   dropThrowPower: 5
-  loadInventory: 1
+  loadInventory: 0
   userDataManager: {fileID: 0}
   user:
     stringValue: 
     indexValue: 0
     stringValues: []
-  quickMenuButtons:
-  - stringValue: Quick1
-    indexValue: 22
+  quickMenuButtons: []
   interactButton:
-    stringValue: Fire2
-    indexValue: 3
+    stringValue: Horizontal
+    indexValue: 0
   defaultAimFX: {fileID: 0}
   enableToggleSwitch: 0
   toggleForwardsButton:
@@ -301,8 +315,8 @@ MonoBehaviour:
     stringValue: Horizontal
     indexValue: 0
   dropButton:
-    stringValue: Drop
-    indexValue: 27
+    stringValue: Horizontal
+    indexValue: 0
 --- !u!114 &114291771598248526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,13 +330,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
-  animController: {fileID: 9100000, guid: 73e810079db905b4cae2d4b8707abc65, type: 2}
+  animController: {fileID: 0}
   forceIdle: 0
-  syncType: 1
-  crossfadeTime: 0.3
+  syncType: 0
+  crossfadeTime: 0
   animIdle:
     indexValue: 0
-    stringValue: Idle
+    stringValue: 
     layer: 0
   animHover:
     indexValue: 0
@@ -330,74 +344,73 @@ MonoBehaviour:
     layer: 0
   animGrounded:
     indexValue: 0
-    stringValue: grounded
+    stringValue: 
     layer: 0
   animOnPlatform:
-    indexValue: 1
-    stringValue: onPlatform
+    indexValue: 0
+    stringValue: 
     layer: 0
   animVelocitySpeed:
-    indexValue: 12
-    stringValue: velocitySpeed
+    indexValue: 0
+    stringValue: 
     layer: 0
   animDirectionX:
-    indexValue: 17
-    stringValue: localVelocityX
+    indexValue: 0
+    stringValue: 
     layer: 0
   animDirectionY:
-    indexValue: 18
-    stringValue: localVelocityY
+    indexValue: 0
+    stringValue: 
     layer: 0
   animDirectionZ:
-    indexValue: 19
-    stringValue: localVelocityZ
+    indexValue: 0
+    stringValue: 
     layer: 0
   animHurts: []
   animDeaths: []
   animStunned:
     indexValue: 0
-    stringValue: Idle
+    stringValue: 
     layer: 0
   animJump:
-    indexValue: 20
-    stringValue: Jump
-    layer: 1
+    indexValue: 0
+    stringValue: 
+    layer: 0
   animRun:
-    indexValue: 10
-    stringValue: Run
+    indexValue: 0
+    stringValue: 
     layer: 0
-  animAttacksMelee:
-  - indexValue: 4
-    stringValue: Melee00
-    layer: 0
-  - indexValue: 5
-    stringValue: Melee01
-    layer: 0
-  - indexValue: 6
-    stringValue: Melee02
-    layer: 0
+  animAttacksMelee: []
   animAttacksRanged: []
   animInputHorizontal:
-    indexValue: 11
-    stringValue: horizontal
+    indexValue: 0
+    stringValue: 
     layer: 0
   animInputVertical:
-    indexValue: 13
-    stringValue: vertical
+    indexValue: 0
+    stringValue: 
     layer: 0
   animCrouch:
-    indexValue: 9
-    stringValue: crouch
+    indexValue: 0
+    stringValue: 
     layer: 0
   animClimbing:
-    indexValue: 5
-    stringValue: climbing
+    indexValue: 0
+    stringValue: 
     layer: 0
   animRunning:
-    indexValue: 2
-    stringValue: run
+    indexValue: 0
+    stringValue: 
+    layer: 0
+  animDashing:
+    indexValue: 0
+    stringValue: 
+    layer: 0
+  animRolling:
+    indexValue: 0
+    stringValue: 
     layer: 0
   animDoubleJump:
-    indexValue: 17
-    stringValue: DoubleJump
-    layer: 1
+    indexValue: 0
+    stringValue: 
+    layer: 0
