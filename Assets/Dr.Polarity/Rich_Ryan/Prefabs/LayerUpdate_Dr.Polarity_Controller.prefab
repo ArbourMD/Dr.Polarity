@@ -158,12 +158,12 @@ MonoBehaviour:
   groundBoxCenter: {x: 0, y: 0, z: 0}
   sideMask:
     serializedVersion: 2
-    m_Bits: 4194560
+    m_Bits: 4227328
   sideDetectCenter: {x: 0, y: 2.5, z: 0}
   idleDetectRadius: 0.3
   movingDetectRadius: 0.3
   sideDetectHeight: 1.3
-  sideDetectDistanceMultiplier: 0.6
+  sideDetectDistanceMultiplier: 1.6
   slowMask:
     serializedVersion: 2
     m_Bits: 256
@@ -297,7 +297,7 @@ MonoBehaviour:
   rollCooldown: 2
   ceilingMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 262144
   ceilingBoxSize: {x: 0.8, y: 0.1, z: 0.8}
   ceilingBoxCenter: {x: 0, y: 0, z: 0}
   curCeilingBoxCenter: {x: 0, y: 2, z: 0}
@@ -1325,7 +1325,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3905133361989292027}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.5654669}
+  m_LocalPosition: {x: 0, y: 0, z: -0.56546855}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4481890371495611861}
@@ -1453,7 +1453,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7048382676721526243}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.890625, y: 0.90234375, z: -0.5654669}
+  m_LocalPosition: {x: -17.890625, y: 0.90234375, z: -0.56546855}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7048382675462683878}
