@@ -41,7 +41,7 @@ public abstract class UIEngineValue : MonoBehaviour
 
     public virtual void SyncEngineValue(EngineValue _engineValue)
     {
-        SetMinMaxValue(_engineValue.Data.FloatMinValue, _engineValue.Data.FloatMaxValue);
+        SetMinMaxValue(_engineValue.Data.MinValue, _engineValue.Data.MaxValue);
         SetCurValue(_engineValue.Value);
         connectedValue = _engineValue;
         connectedValue.valueChanged += SetCurValue;

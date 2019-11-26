@@ -23,22 +23,10 @@ public struct EngineValueEvent
         owner = _owner;
         if (owner.Data.engineEventManager)
             eventManager = Object.Instantiate(owner.Data.engineEventManager);
-        var floatData = _data as EngineFloatData;
-        if (floatData)
-        {
-            maxValue = floatData.maxValue;
-            minValue = floatData.minValue;
-            lastValue = floatData.floatValue;
-            return;
-        }
-        var intData = _data as EngineIntData;
-        if (intData)
-        {
-            maxValue = intData.maxValue;
-            minValue = intData.minValue;
-            lastValue = intData.intValue;
-            return;
-        }
+
+            maxValue = _data.MaxValue;
+            minValue = _data.MinValue;
+            lastValue = _data.Value;
     }
 
     public void SyncEvent(EngineValue _engineValue)
@@ -51,12 +39,9 @@ public struct EngineValueEvent
         _engineValue.valueChanged -= CheckEvent;
     }
 
-    void CheckEvent(object _value)
+    void CheckEvent(float _value)
     {
-        if (_value is float)
-            DoTriggerFilter((float)_value);
-        if (_value is int)
-            DoTriggerFilter((int)_value);
+            DoTriggerFilter(_value);
     }
 
     public void DoTriggerFilter(float _curValue)

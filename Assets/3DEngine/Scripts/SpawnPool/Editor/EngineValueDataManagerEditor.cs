@@ -43,11 +43,9 @@ public class EngineValueDataManagerEditor : Editor
     void DisplayEngineValueCategories(SerializedProperty _property, int _ind)
     {
         var categoryName = _property.FindPropertyRelative("categoryName");
-        var valueType = _property.FindPropertyRelative("valueType");
         var engineValueDatas = _property.FindPropertyRelative("engineValueDatas");
 
         EditorGUILayout.PropertyField(categoryName);
-        EditorGUILayout.PropertyField(valueType);
         engineValueDatas.ArrayFieldButtons("Value", true, false, false, false, DisplayEngineValue);
     }
 

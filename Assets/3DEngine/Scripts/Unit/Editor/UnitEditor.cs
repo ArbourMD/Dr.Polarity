@@ -11,6 +11,8 @@ public class UnitEditor : EngineEntityEditor
     protected SerializedProperty spawnSkinOverride;
     protected SerializedProperty spawnLocationData;
     protected SerializedProperty spawnLocations;
+    protected SerializedProperty respawnOnDeath;
+    protected SerializedProperty respawnTime;
 
     private UnitEquip equip;
 
@@ -24,6 +26,8 @@ public class UnitEditor : EngineEntityEditor
         spawnSkinOverride = sourceRef.FindProperty("spawnSkinOverride");
         spawnLocationData = sourceRef.FindProperty("spawnLocationData");
         spawnLocations = sourceRef.FindProperty("spawnLocations");
+        respawnOnDeath = sourceRef.FindProperty("respawnOnDeath");
+        respawnTime = sourceRef.FindProperty("respawnTime");
 
 
         equip = source.GetComponent<UnitEquip>();
@@ -101,6 +105,11 @@ public class UnitEditor : EngineEntityEditor
         }
         else if (equip)
             EditorExtensions.LabelFieldCustom("You must assign a skin to equip items!", FontStyle.Bold, Color.red);
+
+        EditorGUILayout.PropertyField(respawnOnDeath);
+        if (respawnOnDeath.boolValue)
+            EditorGUILayout.PropertyField(respawnTime);
+
     }
 
 }

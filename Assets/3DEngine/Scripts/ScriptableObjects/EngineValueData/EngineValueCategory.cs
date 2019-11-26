@@ -6,8 +6,6 @@ using UnityEngine;
 public class EngineValueCategory
 {
     public string categoryName;
-    public enum ValueType { Int, Float }
-    public ValueType valueType;
     public EngineValueData[] engineValueDatas;
 
     public string[] GetEngineValueDataNames()

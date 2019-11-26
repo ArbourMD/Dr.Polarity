@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-[CustomEditor (typeof (DetectZoneTrigger))]
+[CustomEditor (typeof (DetectZoneTrigger), true)]
 public class DetectZoneTriggerEditor : Editor
 {
     protected DetectZoneTrigger source;

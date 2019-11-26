@@ -32,31 +32,16 @@ public class EngineValueDelta
             if (deltaType == DeltaType.FromData)
             {
                 if (engineValueData)
-                    delta = engineValueData.FloatValue;
+                    delta = engineValueData.Value;
             }
 
             if (engineValueType == EngineValueType.Add)
             {
-                if (valueSelection.valueData.GetType() == typeof(EngineFloatData))
-                {
-                    _entity.AddEngineFloatValue(id, delta);
-                }
-                else if (valueSelection.valueData.GetType() == typeof(EngineIntData))
-                {
-                    _entity.AddEngineIntValue(id, (int)delta);
-                }
+                _entity.AddEngineFloatValue(id, delta);
             }
             else if (engineValueType == EngineValueType.Subtract)
             {
-                if (valueSelection.valueData.GetType() == typeof(EngineFloatData))
-                {
-                    _entity.SubtractEngineFloatValue(id, Mathf.Abs(delta));
-                }
-                else if (valueSelection.valueData.GetType() == typeof(EngineIntData))
-                {
-                    _entity.SubtractEngineIntValue(id, (int)Mathf.Abs(delta));
-
-                }
+                _entity.SubtractEngineFloatValue(id, Mathf.Abs(delta));
             }
         }
 

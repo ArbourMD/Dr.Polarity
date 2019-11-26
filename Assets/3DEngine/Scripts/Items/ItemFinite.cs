@@ -257,6 +257,9 @@ public abstract class ItemFinite : Item, IUsable
 
     public virtual void Use()
     {
+        if (inUse)
+            return;
+
         if (!IsFireReady)
             return;
 
@@ -320,7 +323,7 @@ public abstract class ItemFinite : Item, IUsable
     {
         if (curAmmo == null)
             return 0;
-        return curAmmo.AmmoValue.FloatValue;
+        return curAmmo.AmmoValue.Value;
     }
 
     public void SetCurAmmoAmount(int _amount)

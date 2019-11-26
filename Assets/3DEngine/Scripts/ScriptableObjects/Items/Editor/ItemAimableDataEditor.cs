@@ -14,7 +14,8 @@ public class ItemAimableDataEditor : ItemFiniteDataEditor
     private SerializedProperty muzzlePosInd;
     private SerializedProperty aimFX;
     private SerializedProperty projectilePreview;
-    private SerializedProperty previewLine;
+    private SerializedProperty aimLineFX;
+    private SerializedProperty previewHit;
     private SerializedProperty ricochetAmount;
 
     protected override void OnEnable()
@@ -33,7 +34,8 @@ public class ItemAimableDataEditor : ItemFiniteDataEditor
         muzzlePosInd = sourceRef.FindProperty("muzzlePosInd");
         aimFX = sourceRef.FindProperty("aimFX");
         projectilePreview = sourceRef.FindProperty("projectilePreview");
-        previewLine = sourceRef.FindProperty("previewLine");
+        aimLineFX = sourceRef.FindProperty("aimLineFX");
+        previewHit = sourceRef.FindProperty("previewHit");
         ricochetAmount = sourceRef.FindProperty("ricochetAmount");
 
     }
@@ -50,7 +52,8 @@ public class ItemAimableDataEditor : ItemFiniteDataEditor
         EditorGUILayout.PropertyField(projectilePreview);
         if (projectilePreview.boolValue)
         {
-            EditorGUILayout.PropertyField(previewLine);
+            EditorGUILayout.PropertyField(aimLineFX);
+            EditorGUILayout.PropertyField(previewHit);
             EditorGUILayout.PropertyField(ricochetAmount);
         }
             

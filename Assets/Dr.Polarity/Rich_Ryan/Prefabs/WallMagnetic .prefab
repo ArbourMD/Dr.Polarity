@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5019491416543928924}
   - component: {fileID: 5019491416543928925}
   - component: {fileID: 5019491416543928926}
-  m_Layer: 0
+  m_Layer: 27
   m_Name: 'WallMagnetic '
   m_TagString: Magnetic
   m_Icon: {fileID: 0}

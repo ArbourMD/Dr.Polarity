@@ -47,6 +47,7 @@ public class DetectZone
 
     private Collider col;
     private Collider[] cols;
+    public Collider[] EnteredColliders { get { return cols; } }
     private Vector3 curDirection;
     private Vector3 curDetectPos;
     private Vector3 lastDetectPos;

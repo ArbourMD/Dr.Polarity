@@ -1,4 +1,4 @@
-﻿// (c) Copyright HutongGames, LLC 2010-2018. All rights reserved.
+﻿// (c) Copyright HutongGames, LLC. All rights reserved.
 
 #if (UNITY_4_3 || UNITY_4_5 || UNITY_4_6 || UNITY_4_7 || UNITY_5_0) 
 #define UNITY_PRE_5_1
@@ -19,7 +19,7 @@ namespace HutongGames.PlayMakerEditor
     {
         // Remember to update version info since it's used by export scripts!
         public const string InstallCurrentVersion = "1.9.0";
-        public const string InstallAssemblyVersion = "1.9.0.p6";
+        public const string InstallAssemblyVersion = "1.9.0.p19";
         public const string InstallBetaVersion = "";
         public const string Version = InstallCurrentVersion + " " + InstallBetaVersion;
 
@@ -88,11 +88,39 @@ namespace HutongGames.PlayMakerEditor
             var window = GetWindow<PlayMakerWelcomeWindow>(true);
             window.SetPage(Page.Welcome);
             PlayMakerAddonManager.ResetView();
+
+            // give window a chance to draw first:
+            EditorApplication.update += CheckUnityVersion;
         }
 
         public static void Open()
         {
             OpenWelcomeWindow();
+        }
+
+        public static void CheckUnityVersion()
+        {
+            EditorApplication.update -= CheckUnityVersion;
+
+            DoUnityVersionCheck();
+        }
+
+        private static bool DoUnityVersionCheck()
+        {
+            if (!EditorStartupPrefs.IsUnityVersionCompatible())
+            {
+                DoFailedUnityVersionDialog();
+                return false;
+            }
+
+            return true;
+        }
+
+        private static void DoFailedUnityVersionDialog()
+        {
+            EditorUtility.DisplayDialog("PlayMaker",
+                "This installer is for Unity " + EditorStartupPrefs.UnityBuildVersion + " and higher!" +
+                "\n\nPlease re-download and import PlayMaker in the Asset Store to get the correct package for this version of Unity.", "OK");
         }
 
         public void OnEnable()
@@ -594,11 +622,15 @@ namespace HutongGames.PlayMakerEditor
 
         private static void PreUpdateCheck(object userData)
         {
+            if (!DoUnityVersionCheck()) return;
+
             PreUpdateChecker.Open();
         }
 
         private static void InstallLatest(object userData)
         {
+            if (!DoUnityVersionCheck()) return;
+
             if (DisplayInstallDialog(InstallAssemblyVersion, "The latest release version of PlayMaker." +
                                                         "\n\nNOTE: Projects saved with PlayMaker 1.8+ cannot be opened in older versions of PlayMaker!"))
             {
@@ -666,7 +698,7 @@ namespace HutongGames.PlayMakerEditor
             {
                 PreUpdateChecker.Open();
             }*/
-
+                
             // next page slides in from the right
             // welcome screen slides offscreen left
             // reversed if returning to the welcome screen

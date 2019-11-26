@@ -32,7 +32,7 @@ MonoBehaviour:
     overridePositionType: 1
     positionType: 2
     trans: {fileID: 0}
-    worldPos: {x: 3.1917453, y: 1.6669369, z: 0.96561795}
+    worldPos: {x: 6.4095964, y: 1.6669369, z: -7.559278}
     offset: {x: 0, y: 0, z: 0}
     size: {x: 1, y: 1, z: 1}
     useTransformAngle: 0
@@ -90,7 +90,7 @@ MonoBehaviour:
     overrideColor: 0
     debugColor: {r: 1, g: 0, b: 0, a: 1}
     handlePoint: {x: 0, y: 0, z: 0}
-  playerSpawn: {fileID: 8476749542709634020, guid: b81866187e8657a48bda7e731ddb9041,
+  playerSpawn: {fileID: 1032697471310498, guid: 6e4156254b9afc64dacd1ae0b1b1b812,
     type: 3}
   progressOnly: 0
   saveProgressToDisc: 0

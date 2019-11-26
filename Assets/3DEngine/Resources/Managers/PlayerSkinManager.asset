@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: PlayerSkinManager
   m_EditorClassIdentifier: 
   playerSkins:
-  - {fileID: 11400000, guid: 5da91f34225b64a47868e3ce68ea6ed2, type: 2}
+  - {fileID: 11400000, guid: 13edc57222129e14783b8bf29e875c74, type: 2}
+  - {fileID: 11400000, guid: e48500fa36e44ee4189ed98413430c5b, type: 2}

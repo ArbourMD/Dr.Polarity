@@ -86,12 +86,14 @@ MonoBehaviour:
   spawnUI: 0
   UIToSpawn: {fileID: 0}
   parentUIToUnit: 0
-  attackTarget: {fileID: 6116986617854875579}
+  attackTarget: {fileID: 0}
   skinOptions: 0
   spawnSkinOverride: {fileID: 0}
   childSkinOverride: {fileID: 0}
   spawnLocationData: {fileID: 0}
   spawnLocations: []
+  respawnOnDeath: 1
+  respawnTime: 2
   setData: 1
   userMode: 0
   userDataManager: {fileID: 0}
@@ -118,11 +120,12 @@ MonoBehaviour:
   curMovementState: 0
   target: {fileID: 0}
   doDefaultMovementIfNoTargets: 1
+  resetToStartPositionIfNoTargets: 0
   entityDataManager: {fileID: 0}
   chasePriorities: []
   fleePriorities: []
   lookAtPriorities: []
-  patrolType: 0
+  patrolType: 2
   patrolDatas: []
   patrolPoints: []
   wanderRadius: 3
@@ -132,46 +135,46 @@ MonoBehaviour:
   fleeIntervalCheckTime: 1
   fleeSearchDistance: 10
   arrivalDistance: 0.1
-  arrivalTime: 0
+  arrivalTime: 0.1
   stuckCheckTime: 5
   rotSensitivity: 6
   ignoreLeanRotation: 1
   enableClimbing: 0
   climbingDetect: 0
-  climbSpeed: 15
+  climbSpeed: 6
   climbing: 0
   inAirControlTime: 2
   addedGravityType: 1
-  forceAmount: 0.5
+  forceAmount: 0
   forceDirection: {x: 0, y: -1, z: 0}
   useCharacterControllerGroundDetection: 0
   groundMask:
     serializedVersion: 2
-    m_Bits: 65792
+    m_Bits: 4294967295
   platformMask:
     serializedVersion: 2
-    m_Bits: 65536
-  groundBoxSize: {x: 0.8, y: 0.15, z: 0.8}
+    m_Bits: 4294967295
+  groundBoxSize: {x: 1, y: 1, z: 1}
   groundBoxCenter: {x: 0, y: 0, z: 0}
   sideMask:
     serializedVersion: 2
-    m_Bits: 4194560
-  sideDetectCenter: {x: 0, y: 2.5, z: 0}
+    m_Bits: 4294967295
+  sideDetectCenter: {x: 0, y: 0, z: 0}
   idleDetectRadius: 0.3
   movingDetectRadius: 0.3
-  sideDetectHeight: 1.3
+  sideDetectHeight: 0.6
   sideDetectDistanceMultiplier: 0.6
   slowMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0
   slowMultiplier: 0.1
   ladderLayer:
-    indexValue: 22
-    stringValue: Ladder
+    indexValue: 0
+    stringValue: Default
     maskValue:
       serializedVersion: 2
-      m_Bits: 4194304
-  baseSpeed: 0
+      m_Bits: 1
+  baseSpeed: 1
   enableJump: 1
   horizontalInput:
     stringValue: Horizontal
@@ -187,8 +190,8 @@ MonoBehaviour:
     stringValue: Mouse X
     indexValue: 6
   keyboardAimInputVer:
-    stringValue: Mouse Y
-    indexValue: 7
+    stringValue: Mouse X
+    indexValue: 6
   joystickAimInputHor:
     stringValue: XboxRightStickHor
     indexValue: 20
@@ -202,29 +205,18 @@ MonoBehaviour:
     indexValue: 18
   backwardSpeed: 3
   enableMovementSmoothing: 0
-  moveSensitivity: 15
+  moveSensitivity: 0
   enableCameraSwitching: 0
   cameraSwitch:
-    cameraSwitchers:
-    - enterCameraManager: {fileID: 0}
-      enterCameraInd: 0
-      exitCameraManager: {fileID: 0}
-      exitCameraInd: 0
-      ignorePriorityOnExit: 0
-      switchButton:
-        stringValue: Fire2
-        indexValue: 3
-      switchType: 1
-      activateEvents: []
-      deactivateEvents: []
+    cameraSwitchers: []
   rotationType: 1
   clampYRotation: 0
   yRotationLimit: 90
-  enableRotSmoothing: 1
-  turnSensitivity: 5
+  enableRotSmoothing: 0
+  turnSensitivity: 0
   defaultAimMask:
     serializedVersion: 2
-    m_Bits: 13074705
+    m_Bits: 4294967295
   defaultAimOrigin: {x: 0, y: 1, z: 0.5}
   defaultAimDistance: 10
   enableInteraction: 1
@@ -237,10 +229,10 @@ MonoBehaviour:
     m_Bits: 8388608
   enableCrouch: 0
   crouchButton:
-    stringValue: Crouch
-    indexValue: 31
+    stringValue: Horizontal
+    indexValue: 0
   toggleCrouch: 0
-  crouchTime: 0.1
+  crouchTime: 0.5
   crouchSpeed: 2
   crouchSpeedTime: 1
   jumpButton:
@@ -248,7 +240,7 @@ MonoBehaviour:
     indexValue: 5
   jumpStyle: 0
   enableDoubleJump: 0
-  enableJumpClimbing: 0
+  enableJumpClimbing: 1
   gravityMultiplier: 0
   lowJumpMultiplier: 0
   jumpCurve:
@@ -278,11 +270,11 @@ MonoBehaviour:
   jumpTime: 0.3
   enableDash: 0
   dashButton:
-    stringValue: Jump
-    indexValue: 5
-  dashPower: 50
-  dashTime: 0.1
-  dashCooldown: 0
+    stringValue: 
+    indexValue: 0
+  dashPower: 10
+  dashTime: 0.5
+  dashCooldown: 2
   enableRoll: 0
   rollButton:
     stringValue: 
@@ -294,10 +286,10 @@ MonoBehaviour:
   rollCooldown: 2
   ceilingMask:
     serializedVersion: 2
-    m_Bits: 0
-  ceilingBoxSize: {x: 0.8, y: 0.1, z: 0.8}
+    m_Bits: 4294967295
+  ceilingBoxSize: {x: 0, y: 0, z: 0}
   ceilingBoxCenter: {x: 0, y: 0, z: 0}
-  curCeilingBoxCenter: {x: 0, y: 2, z: 0}
+  curCeilingBoxCenter: {x: 0, y: 0, z: 0}
 --- !u!114 &361835861035640560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -361,16 +353,7 @@ MonoBehaviour:
     indexValue: 10
     stringValue: Run
     layer: 0
-  animAttacksMelee:
-  - indexValue: 4
-    stringValue: Melee00
-    layer: 0
-  - indexValue: 5
-    stringValue: Melee01
-    layer: 0
-  - indexValue: 6
-    stringValue: Melee02
-    layer: 0
+  animAttacksMelee: []
   animAttacksRanged: []
   animInputHorizontal:
     indexValue: 12
@@ -1102,7 +1085,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3905133361989292027}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.5654669}
+  m_LocalPosition: {x: 0, y: 0, z: -0.5654688}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4481890371495611861}
@@ -1166,8 +1149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 852283b20b5c04e49b08562e7d1ef096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockTo: 1
-  lockAxisMask: 2
+  lockTo: 0
+  lockAxisMask: 0
   rotation: {x: 0, y: 0, z: 0}
 --- !u!1 &3959993690468629800
 GameObject:
@@ -1340,7 +1323,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7048382676721526243}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.890625, y: 0.90234375, z: -0.5654669}
+  m_LocalPosition: {x: -17.890625, y: 0.90234375, z: -0.5654688}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7048382675462683878}
@@ -1795,7 +1778,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 452
-        y: 190.92969
+        y: 222.92969
         width: 124
         height: 48
       isBreakpoint: 0
@@ -1899,7 +1882,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 661
-        y: 280.97656
+        y: 312.97656
         width: 100
         height: 48
       isBreakpoint: 0
@@ -1931,7 +1914,7 @@ MonoBehaviour:
         - 
         actionEnabled: 0101
         actionIsOpen: 0101
-        actionStartIndex: 0000000010000000
+        actionStartIndex: 0000000016000000
         actionHashCodes: d3bd7b0588611604
         unityObjectParams: []
         fsmGameObjectParams:
@@ -1981,6 +1964,42 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 27
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 8
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 17
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 24
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 25
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 26
         fsmBoolParams:
         - useVariable: 1
           name: 
@@ -2039,12 +2058,12 @@ MonoBehaviour:
         - DidHit
         - FINISHED
         byteData: 01000000
-        arrayParamSizes: 00000000
+        arrayParamSizes: 06000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmInt
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001c0000001c000000070000000f0000001700000011000000130000001c0000001c0000000f000000100000000c00000011000000190000001100000017000000
+        paramDataType: 140000001c0000001c000000070000000f0000001700000011000000130000001c0000001c0000000f000000100000000c00000010000000100000001000000010000000100000001000000011000000190000001100000017000000
         paramName:
         - fromGameObject
         - fromPosition
@@ -2059,19 +2078,25 @@ MonoBehaviour:
         - storeHitDistance
         - repeatInterval
         - layerMask
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
         - invertMask
         - debugColor
         - debug
         - sendEvent
-        paramDataPos: 0000000000000000010000000000000000000000000000000000000000000000020000000300000001000000000000000000000001000000000000000200000001000000
-        paramByteDataSize: 0000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+        paramDataPos: 0000000000000000010000000000000000000000000000000000000000000000020000000300000001000000000000000000000001000000020000000300000004000000050000000600000001000000000000000200000001000000
+        paramByteDataSize: 0000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     - name: getTag
       description: 
       colorIndex: 1
       position:
         serializedVersion: 2
         x: 657.0469
-        y: 387.42188
+        y: 419.42188
         width: 100
         height: 48
       isBreakpoint: 0
@@ -2167,7 +2192,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 468.4297
-        y: 104
+        y: 136
         width: 100
         height: 32
       isBreakpoint: 0
@@ -2227,7 +2252,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 656.96875
-        y: 493.8203
+        y: 525.8203
         width: 100
         height: 48
       isBreakpoint: 0
@@ -2323,7 +2348,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 836.8203
-        y: 394.35156
+        y: 426.35156
         width: 100
         height: 32
       isBreakpoint: 0
@@ -2401,7 +2426,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 249.03906
-        y: 286.84375
+        y: 318.84375
         width: 100
         height: 48
       isBreakpoint: 0
@@ -2433,7 +2458,7 @@ MonoBehaviour:
         - 
         actionEnabled: 0101
         actionIsOpen: 0101
-        actionStartIndex: 0000000010000000
+        actionStartIndex: 0000000016000000
         actionHashCodes: d3bd7b0588611604
         unityObjectParams: []
         fsmGameObjectParams:
@@ -2483,6 +2508,42 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 27
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 8
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 17
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 24
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 25
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 26
         fsmBoolParams:
         - useVariable: 1
           name: 
@@ -2541,12 +2602,12 @@ MonoBehaviour:
         - DidHit
         - FINISHED
         byteData: 01000000
-        arrayParamSizes: 00000000
+        arrayParamSizes: 06000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmInt
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001c0000001c000000070000000f0000001700000011000000130000001c0000001c0000000f000000100000000c00000011000000190000001100000017000000
+        paramDataType: 140000001c0000001c000000070000000f0000001700000011000000130000001c0000001c0000000f000000100000000c00000010000000100000001000000010000000100000001000000011000000190000001100000017000000
         paramName:
         - fromGameObject
         - fromPosition
@@ -2561,19 +2622,25 @@ MonoBehaviour:
         - storeHitDistance
         - repeatInterval
         - layerMask
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
         - invertMask
         - debugColor
         - debug
         - sendEvent
-        paramDataPos: 0000000000000000010000000000000000000000000000000000000000000000020000000300000001000000000000000000000001000000000000000200000001000000
-        paramByteDataSize: 0000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+        paramDataPos: 0000000000000000010000000000000000000000000000000000000000000000020000000300000001000000000000000000000001000000020000000300000004000000050000000600000001000000000000000200000001000000
+        paramByteDataSize: 0000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     - name: SetNeut
       description: 
       colorIndex: 3
       position:
         serializedVersion: 2
         x: 833.8125
-        y: 505.1953
+        y: 537.1953
         width: 100
         height: 32
       isBreakpoint: 0
@@ -2651,7 +2718,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 652.7422
-        y: 593.02344
+        y: 625.02344
         width: 100
         height: 48
       isBreakpoint: 0
@@ -2747,7 +2814,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 832.7422
-        y: 595.96094
+        y: 627.96094
         width: 100
         height: 32
       isBreakpoint: 0
@@ -2825,7 +2892,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 250.72656
-        y: 392.9922
+        y: 424.9922
         width: 100
         height: 48
       isBreakpoint: 0
@@ -2921,7 +2988,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 252.10938
-        y: 496.3672
+        y: 528.3672
         width: 100
         height: 48
       isBreakpoint: 0
@@ -3017,7 +3084,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 60.703125
-        y: 397.4375
+        y: 429.4375
         width: 100
         height: 32
       isBreakpoint: 0
@@ -3095,7 +3162,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 57.695312
-        y: 508.28125
+        y: 540.28125
         width: 100
         height: 32
       isBreakpoint: 0
@@ -3173,7 +3240,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 253.89062
-        y: 595.60156
+        y: 627.60156
         width: 100
         height: 48
       isBreakpoint: 0
@@ -3269,7 +3336,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 56.625
-        y: 599.0469
+        y: 631.0469
         width: 100
         height: 32
       isBreakpoint: 0
@@ -3354,10 +3421,25 @@ MonoBehaviour:
     - name: PositiveInput
       isSystemEvent: 0
       isGlobal: 0
+    - name: Retry
+      isSystemEvent: 0
+      isGlobal: 0
     globalTransitions: []
     variables:
       floatVariables: []
-      intVariables: []
+      intVariables:
+      - useVariable: 1
+        name: NegTag
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: PosTag
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       boolVariables: []
       stringVariables: []
       vector2Variables: []
@@ -3379,7 +3461,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000
+      variableCategoryIDs: 000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0

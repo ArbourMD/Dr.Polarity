@@ -14,6 +14,9 @@ TagManager:
   - MagneticPos
   - Magnetic
   - Stopper
+  - Megnetic
+  - CatWalk
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -42,7 +45,7 @@ TagManager:
   - Puzzle1
   - Puzzle2
   - Puzzle3
-  - 
+  - Polarize
   - 
   - 
   - 

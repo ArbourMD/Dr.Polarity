@@ -11,6 +11,7 @@ public class ItemAimableData : ItemFiniteData
     public int muzzlePosInd;
     public AimReticalFX aimFX;
     public bool projectilePreview;
-    public LineRenderer previewLine;
+    public AimLineFX aimLineFX;
+    public GameObject previewHit;
     public int ricochetAmount = 5;
 }
