@@ -1,0 +1,97 @@
+{
+    "format": {
+        "version": "1.0"
+    },
+    "shaders": {
+        "Main shader": {
+            "parameters": {
+                "Common Parameters": {
+                    "ao_intensity": 0.75,
+                    "emissive_intensity": 1,
+                    "horizonFade": 1.2999999523162842,
+                    "nbSamples": 16
+                },
+                "Parallax Occlusion Mapping": {
+                    "maxPOMSamples": 16,
+                    "minPOMSamples": 4,
+                    "pomStrength": 1,
+                    "usePOM": false
+                },
+                "Subsurface Scattering Parameters": {
+                    "sssColor": [
+                        0.7009999752044678,
+                        0.3009999990463257,
+                        0.3050000071525574
+                    ],
+                    "sssEnabled": true,
+                    "sssScale": 0.5,
+                    "sssType": 1
+                }
+            },
+            "shader": "pbr-metal-rough",
+            "shaderInstance": "Main shader"
+        }
+    },
+    "texturesets": {
+        "Arm Cables": {
+            "shader": "Main shader"
+        },
+        "Arm Connector": {
+            "shader": "Main shader"
+        },
+        "Arms": {
+            "shader": "Main shader"
+        },
+        "Back Cables": {
+            "shader": "Main shader"
+        },
+        "Cable Hip": {
+            "shader": "Main shader"
+        },
+        "Chest": {
+            "shader": "Main shader"
+        },
+        "Cogs": {
+            "shader": "Main shader"
+        },
+        "Feet": {
+            "shader": "Main shader"
+        },
+        "Forearm": {
+            "shader": "Main shader"
+        },
+        "Grill": {
+            "shader": "Main shader"
+        },
+        "Hands": {
+            "shader": "Main shader"
+        },
+        "Head": {
+            "shader": "Main shader"
+        },
+        "Joints": {
+            "shader": "Main shader"
+        },
+        "Kness Cables": {
+            "shader": "Main shader"
+        },
+        "Leg Joints": {
+            "shader": "Main shader"
+        },
+        "Leg cables": {
+            "shader": "Main shader"
+        },
+        "Neck": {
+            "shader": "Main shader"
+        },
+        "Pelvis": {
+            "shader": "Main shader"
+        },
+        "Thigh": {
+            "shader": "Main shader"
+        },
+        "calves": {
+            "shader": "Main shader"
+        }
+    }
+}
