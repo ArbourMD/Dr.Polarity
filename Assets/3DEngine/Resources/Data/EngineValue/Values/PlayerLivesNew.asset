@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PlayerLivesNew
   m_EditorClassIdentifier: 
   valueUIType: 0
-  value: 3
+  value: 30
   minValue: 0
-  maxValue: 3
+  maxValue: 30
   id: 1000110000
