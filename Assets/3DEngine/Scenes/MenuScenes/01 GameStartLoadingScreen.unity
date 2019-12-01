@@ -676,6 +676,7 @@ MonoBehaviour:
   spawnManager: {fileID: 0}
   initializeSpawnManagerOnStart: 1
   sceneTransData: {fileID: 11400000, guid: 964e62b86e4354b4d88698be1241a1cc, type: 2}
+  valueUIManagerData: {fileID: 0}
   poolManagerData: {fileID: 0}
   killHeight: -20
   menuManager: {fileID: 0}

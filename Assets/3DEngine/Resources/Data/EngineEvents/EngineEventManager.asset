@@ -70,16 +70,16 @@ MonoBehaviour:
           valueDataManager: {fileID: 11400000, guid: 0eb7e98275f9ac34ea499fe1799e6600,
             type: 2}
           valueSelection:
-            selectionName: Lives | PlayerLives
+            selectionName: Lives | PlayerLivesNew
             category:
               stringValue: Lives
               indexValue: 1
               stringValues: []
             engineValue:
-              stringValue: PlayerLives
+              stringValue: PlayerLivesNew
               indexValue: 0
               stringValues: []
-            valueData: {fileID: 11400000, guid: f008f3fdd222e33419fac5ff5dcdd30c,
+            valueData: {fileID: 11400000, guid: 4fd9e1d63829393469421f3c6d92fc4c,
               type: 2}
           engineValueType: 1
           deltaType: 1
@@ -155,16 +155,17 @@ MonoBehaviour:
           valueDataManager: {fileID: 11400000, guid: 0eb7e98275f9ac34ea499fe1799e6600,
             type: 2}
           valueSelection:
-            selectionName: Health | PlayerHealth
+            selectionName: Health | PlayerHP
             category:
               stringValue: Health
               indexValue: 0
               stringValues: []
             engineValue:
-              stringValue: PlayerHealth
+              stringValue: PlayerHP
               indexValue: 0
               stringValues: []
-            valueData: {fileID: 0}
+            valueData: {fileID: 11400000, guid: 095945809c382254c8ea07deb65d9820,
+              type: 2}
           engineValueType: 2
           deltaType: 0
           valueDelta: 0
@@ -173,7 +174,7 @@ MonoBehaviour:
           engineValueData: {fileID: 0}
       controllerOptions: []
       detectZoneInd: 0
-      delay: 2
+      delay: 0.1
       repeat: 0
       repeatTime: 0
       finishType: 0
