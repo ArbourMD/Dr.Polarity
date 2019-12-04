@@ -503,7 +503,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -537,7 +537,7 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 1
+  eventHandlerComponentsAdded: 0
 --- !u!114 &5226869828273397857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1689,7 +1689,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -1723,7 +1723,7 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 1
+  eventHandlerComponentsAdded: 0
 --- !u!1 &2430186380402949893
 GameObject:
   m_ObjectHideFlags: 0
@@ -2284,8 +2284,6 @@ MonoBehaviour:
   childSkinOverride: {fileID: 0}
   spawnLocationData: {fileID: 0}
   spawnLocations: []
-  respawnOnDeath: 1
-  respawnTime: 2
   setData: 1
   userMode: 0
   userDataManager: {fileID: 0}
@@ -2312,7 +2310,6 @@ MonoBehaviour:
   curMovementState: 0
   target: {fileID: 0}
   doDefaultMovementIfNoTargets: 1
-  resetToStartPositionIfNoTargets: 0
   entityDataManager: {fileID: 0}
   chasePriorities: []
   fleePriorities: []
@@ -3713,7 +3710,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -3747,7 +3744,7 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 1
+  eventHandlerComponentsAdded: 0
 --- !u!1 &6154385074559658354
 GameObject:
   m_ObjectHideFlags: 0
