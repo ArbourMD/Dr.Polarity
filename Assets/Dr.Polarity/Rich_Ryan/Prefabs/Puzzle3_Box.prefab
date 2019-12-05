@@ -146,7 +146,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7da3d721666f28e4bbc4eada7a38f351, type: 2}
+  - {fileID: 2100000, guid: 9d5a1e3473199c54f9d19d989a83e115, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -219,8 +219,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1037.6602
-        y: 487.51086
+        x: 61.660156
+        y: 295.51086
         width: 112
         height: 64
       isBreakpoint: 0
@@ -405,8 +405,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1515.8398
-        y: 436.76868
+        x: 539.83984
+        y: 244.76868
         width: 100
         height: 32
       isBreakpoint: 0
@@ -455,7 +455,7 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           typeName: 
-          value: {fileID: 2100000, guid: 7433404c1e57897479731fc514010d83, type: 2}
+          value: {fileID: 2100000, guid: 2278c0bfa204a0d478198401e72d335f, type: 2}
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
@@ -491,8 +491,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1540.0117
-        y: 369.6046
+        x: 564.0117
+        y: 177.60461
         width: 100
         height: 32
       isBreakpoint: 0
@@ -541,7 +541,7 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           typeName: 
-          value: {fileID: 2100000, guid: 61ac7e8980aa9d044846596e188684a6, type: 2}
+          value: {fileID: 2100000, guid: e11c9b2952b7c734c8f7ba5208ae2b3b, type: 2}
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
@@ -577,8 +577,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1520.3633
-        y: 563.9171
+        x: 544.3633
+        y: 371.9171
         width: 100
         height: 32
       isBreakpoint: 0
@@ -627,7 +627,7 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           typeName: 
-          value: {fileID: 2100000, guid: 7da3d721666f28e4bbc4eada7a38f351, type: 2}
+          value: {fileID: 2100000, guid: 9d5a1e3473199c54f9d19d989a83e115, type: 2}
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
@@ -663,8 +663,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1250.8398
-        y: 296.6593
+        x: 274.83984
+        y: 104.6593
         width: 107
         height: 32
       isBreakpoint: 0
@@ -776,7 +776,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
