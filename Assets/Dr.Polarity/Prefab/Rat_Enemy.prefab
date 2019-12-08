@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 8544703197941133528}
   - component: {fileID: 2789414526398621573}
   - component: {fileID: 8083702129705312892}
+  - component: {fileID: 18643685}
   m_Layer: 17
   m_Name: Rat_Enemy
   m_TagString: Magnetic
@@ -2002,7 +2003,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -2029,7 +2030,7 @@ MonoBehaviour:
     handleJointBreak2D: 0
     handleOnGUI: 0
     handleFixedUpdate: 0
-    handleLateUpdate: 1
+    handleLateUpdate: 0
     handleApplicationEvents: 0
     handleUiEvents: 0
     handleLegacyNetworking: 0
@@ -12570,7 +12571,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -12588,7 +12589,7 @@ MonoBehaviour:
     handleTriggerEnter: 0
     handleTriggerExit: 0
     handleTriggerStay: 0
-    handleCollisionEnter: 1
+    handleCollisionEnter: 0
     handleCollisionExit: 0
     handleCollisionStay: 0
     handleParticleCollision: 0
@@ -14853,6 +14854,19 @@ MonoBehaviour:
   - {fileID: 672879459960622570}
   - {fileID: 672879459960622569}
   - {fileID: 8544703197941133528}
+--- !u!65 &18643685
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672879459960622566}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.10264444, z: 2.2910402}
+  m_Center: {x: -0.0000000013394339, y: -0.44867778, z: -0.1004002}
 --- !u!1 &5223775626871293383
 GameObject:
   m_ObjectHideFlags: 0
@@ -14907,16 +14921,16 @@ MonoBehaviour:
       m_Bits: 2048
     ignoreTriggerColliders: 1
     overrideDetectType: 0
-    detectType: 2
+    detectType: 1
     colliderToUse: {fileID: 0}
     overridePositionType: 0
     positionType: 1
     trans: {fileID: 5223775626871293385}
     worldPos: {x: -8.014626, y: 1.1685877, z: -3.9102497}
     offset: {x: 0, y: 0, z: 0}
-    size: {x: 1, y: 1, z: 2}
-    useTransformAngle: 0
-    angle: {x: 0, y: 90, z: 90}
+    size: {x: 1.8, y: 1, z: 0.9}
+    useTransformAngle: 1
+    angle: {x: 0, y: 194.02534, z: 0}
     radius: 0.6
     height: 2
     overrideColor: 0
@@ -15041,7 +15055,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8548300354648638887}
   m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.063, y: 0, z: 0.7}
+  m_LocalPosition: {x: -0.063, y: 0.075, z: 0.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 672879459960622558}

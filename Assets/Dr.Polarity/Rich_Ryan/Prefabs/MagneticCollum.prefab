@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7029286050246556054}
-  - component: {fileID: 7029286050246556049}
-  - component: {fileID: 7029286050246556050}
   - component: {fileID: 7029286050246556051}
+  - component: {fileID: 9104743440869845950}
+  - component: {fileID: 4330126652394385461}
   m_Layer: 8
   m_Name: MagneticCollum
   m_TagString: Wall
@@ -34,55 +34,10 @@ Transform:
   - {fileID: 2851746716595951734}
   - {fileID: 2851746716669086139}
   - {fileID: 2851746718184068860}
+  - {fileID: 8979766517437508434}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 22.482, z: 0}
---- !u!33 &7029286050246556049
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7029286050246556055}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &7029286050246556050
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7029286050246556055}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
 --- !u!65 &7029286050246556051
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -94,8 +49,129 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.99999946, y: 0.46863633, z: 0.99999946}
+  m_Center: {x: 0, y: -0.25981915, z: 0}
+--- !u!65 &9104743440869845950
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7029286050246556055}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8056442, y: 0.43446738, z: 0.80557364}
+  m_Center: {x: 0, y: 0.1851851, z: 0}
+--- !u!65 &4330126652394385461
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7029286050246556055}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.90967566, y: 0.2166724, z: 0.91996443}
+  m_Center: {x: 0, y: 0.50920725, z: 0}
+--- !u!1001 &4171528272088563784
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7029286050246556054}
+    m_Modifications:
+    - target: {fileID: -927199367670048503, guid: f909691c09937c946acb137835eeff32,
+        type: 3}
+      propertyPath: m_Name
+      value: Collumn
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f909691c09937c946acb137835eeff32,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f909691c09937c946acb137835eeff32,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.492
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f909691c09937c946acb137835eeff32,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f909691c09937c946acb137835eeff32,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071063
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f909691c09937c946acb137835eeff32,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0008494854
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f909691c09937c946acb137835eeff32,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0008495003
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f909691c09937c946acb137835eeff32,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071063
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f909691c09937c946acb137835eeff32,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f909691c09937c946acb137835eeff32,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f909691c09937c946acb137835eeff32,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f909691c09937c946acb137835eeff32,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0.13800001
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f909691c09937c946acb137835eeff32,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.53143406
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f909691c09937c946acb137835eeff32,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5314343
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f909691c09937c946acb137835eeff32,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.11313763
+      objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: f909691c09937c946acb137835eeff32,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4d86f43555c9263438af631f762fae6b, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f909691c09937c946acb137835eeff32, type: 3}
+--- !u!4 &8979766517437508434 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: f909691c09937c946acb137835eeff32,
+    type: 3}
+  m_PrefabInstance: {fileID: 4171528272088563784}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7078427567585770781
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -103,11 +179,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7029286050246556054}
     m_Modifications:
-    - target: {fileID: 5019491416543928928, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
-        type: 3}
-      propertyPath: m_Name
-      value: 'WallMagnetic '
-      objectReference: {fileID: 0}
     - target: {fileID: 5019491416543928927, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -178,6 +249,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5314341
       objectReference: {fileID: 0}
+    - target: {fileID: 5019491416543928928, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
+        type: 3}
+      propertyPath: m_Name
+      value: 'WallMagnetic '
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d, type: 3}
 --- !u!4 &2851746717574963010 stripped
@@ -193,11 +269,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7029286050246556054}
     m_Modifications:
-    - target: {fileID: 5019491416543928928, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
-        type: 3}
-      propertyPath: m_Name
-      value: WallMagnetic (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 5019491416543928927, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -268,6 +339,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.53143406
       objectReference: {fileID: 0}
+    - target: {fileID: 5019491416543928928, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
+        type: 3}
+      propertyPath: m_Name
+      value: WallMagnetic (3)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d, type: 3}
 --- !u!4 &2851746718184068860 stripped
@@ -283,11 +359,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7029286050246556054}
     m_Modifications:
-    - target: {fileID: 5019491416543928928, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
-        type: 3}
-      propertyPath: m_Name
-      value: WallMagnetic (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 5019491416543928927, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -358,6 +429,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5314345
       objectReference: {fileID: 0}
+    - target: {fileID: 5019491416543928928, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
+        type: 3}
+      propertyPath: m_Name
+      value: WallMagnetic (2)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d, type: 3}
 --- !u!4 &2851746716669086139 stripped
@@ -373,11 +449,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7029286050246556054}
     m_Modifications:
-    - target: {fileID: 5019491416543928928, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
-        type: 3}
-      propertyPath: m_Name
-      value: WallMagnetic (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 5019491416543928927, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -447,6 +518,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.53143424
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019491416543928928, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
+        type: 3}
+      propertyPath: m_Name
+      value: WallMagnetic (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d, type: 3}
