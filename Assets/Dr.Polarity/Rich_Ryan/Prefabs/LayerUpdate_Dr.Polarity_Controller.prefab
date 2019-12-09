@@ -314,7 +314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
-  animController: {fileID: 9100000, guid: 73e810079db905b4cae2d4b8707abc65, type: 2}
+  animController: {fileID: 9100000, guid: 95ea1389a7a30a84b84af9adb251ebe3, type: 2}
   forceIdle: 0
   syncType: 1
   crossfadeTime: 0.3
@@ -357,13 +357,13 @@ MonoBehaviour:
     stringValue: Idle
     layer: 0
   animJump:
-    indexValue: 20
-    stringValue: Start
-    layer: 1
+    indexValue: 13
+    stringValue: ClimbingDown
+    layer: 2
   animRun:
     indexValue: 10
-    stringValue: Run
-    layer: 0
+    stringValue: Start
+    layer: 1
   animAttacksMelee:
   - indexValue: 4
     stringValue: Melee00
@@ -404,9 +404,9 @@ MonoBehaviour:
     stringValue: roll
     layer: 0
   animDoubleJump:
-    indexValue: 17
-    stringValue: Hover
-    layer: 1
+    indexValue: 13
+    stringValue: ClimbingDown
+    layer: 2
 --- !u!114 &6329932804450205648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -783,7 +783,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1940529430464997698
 Transform:
   m_ObjectHideFlags: 0
@@ -1325,7 +1325,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3905133361989292027}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.5654688}
+  m_LocalPosition: {x: 0, y: 0, z: -0.5654669}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4481890371495611861}
@@ -1453,7 +1453,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7048382676721526243}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.890625, y: 0.90234375, z: -0.5654688}
+  m_LocalPosition: {x: -17.890625, y: 0.90234375, z: -0.5654669}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7048382675462683878}
