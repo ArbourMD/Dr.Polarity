@@ -357,13 +357,13 @@ MonoBehaviour:
     stringValue: Idle
     layer: 0
   animJump:
-    indexValue: 20
-    stringValue: Start
-    layer: 1
+    indexValue: 13
+    stringValue: ClimbingDown
+    layer: 2
   animRun:
     indexValue: 10
-    stringValue: Run
-    layer: 0
+    stringValue: Start
+    layer: 1
   animAttacksMelee:
   - indexValue: 4
     stringValue: Melee00
@@ -404,9 +404,9 @@ MonoBehaviour:
     stringValue: roll
     layer: 0
   animDoubleJump:
-    indexValue: 17
-    stringValue: Hover
-    layer: 1
+    indexValue: 13
+    stringValue: ClimbingDown
+    layer: 2
 --- !u!114 &6329932804450205648
 MonoBehaviour:
   m_ObjectHideFlags: 0
