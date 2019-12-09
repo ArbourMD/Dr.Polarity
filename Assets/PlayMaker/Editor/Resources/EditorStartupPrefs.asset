@@ -16,5 +16,10 @@ MonoBehaviour:
   playmakerVersion: 
   showWelcomeScreen: 1
   showUpgradeGuide: 0
+<<<<<<< HEAD
   lastAutoUpdateSignature: 2019.2.1f1__C:/Users/travi/Desktop/12-06 GetKrakenBuild/Dr.Polarity/Assets__0.0.0.0
+=======
+  lastAutoUpdateSignature: 2019.2.1f1__D:/Michael Arbour/Documents/Year Three Semester
+    1/PolarityRepository/Dr.Polarity/Assets__0.0.0.0
+>>>>>>> master
   useLegacyNetworking: 0

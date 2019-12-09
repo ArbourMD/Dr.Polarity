@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 599147866229151766}
   m_Layer: 0
   m_Name: Railing
-  m_TagString: Untagged
+  m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 4032229240728140651}
   m_LocalRotation: {x: -0.50036645, y: 0.49963328, z: 0.49963328, w: 0.50036645}
   m_LocalPosition: {x: -17.355522, y: 11.85, z: -3.9327693}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.54, y: 2.54, z: 2.54}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -40,7 +40,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4032229240728140651}
-  m_Mesh: {fileID: -8687905837910838255, guid: fcdcf8b9af6ada04fa447dade5d6b361, type: 3}
+  m_Mesh: {fileID: 5070296105956975811, guid: fcdcf8b9af6ada04fa447dade5d6b361, type: 3}
 --- !u!23 &3443438617989025719
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -58,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c0b968f630f10da4688d6a161b9628a9, type: 2}
+  - {fileID: 2100000, guid: 961c12c2054426543bef34b278fbd933, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -90,5 +90,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9340069, y: 0.049203616, z: 2.896367}
-  m_Center: {x: -0.4430188, y: -0.00007717938, z: 1.4286278}
+  m_Size: {x: 0.51, y: 0.08, z: 1.01}
+  m_Center: {x: -0.22, y: 0, z: 0.47}
