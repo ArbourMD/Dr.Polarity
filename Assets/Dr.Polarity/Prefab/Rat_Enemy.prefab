@@ -3670,7 +3670,7 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           typeName: 
-          value: {fileID: 2100000, guid: 7da3d721666f28e4bbc4eada7a38f351, type: 2}
+          value: {fileID: 2100000, guid: 1b7e42310735de645b14d7c3d6528533, type: 2}
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
@@ -3819,7 +3819,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -14613,16 +14613,16 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.GetPosition
-        - HutongGames.PlayMaker.Actions.DestroySelf
         - HutongGames.PlayMaker.Actions.CreateObject
+        - HutongGames.PlayMaker.Actions.DestroySelf
         customNames:
         - 
         - 
         - 
         actionEnabled: 010101
         actionIsOpen: 010101
-        actionStartIndex: 000000000700000008000000
-        actionHashCodes: 5552ad0562f95203bf83c900
+        actionStartIndex: 00000000070000000c000000
+        actionHashCodes: 5552ad05bf83c90062f95203
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -14630,7 +14630,8 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {fileID: 0}
+          value: {fileID: 206859193252117818, guid: adfb5d4f276ab9f4f974c9fdcfff3525,
+            type: 3}
         - useVariable: 0
           name: 
           tooltip: 
@@ -14719,7 +14720,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001c0000000f0000000f0000000f00000007000000010000001100000013000000130000001c0000001c00000013000000
+        paramDataType: 140000001c0000000f0000000f0000000f000000070000000100000013000000130000001c0000001c0000001300000011000000
         paramName:
         - gameObject
         - vector
@@ -14728,13 +14729,13 @@ MonoBehaviour:
         - z
         - space
         - everyFrame
-        - detachChildren
         - gameObject
         - spawnPoint
         - position
         - rotation
         - storeObject
-        paramDataPos: 00000000000000000000000001000000020000000000000004000000000000000000000001000000010000000200000002000000
+        - detachChildren
+        paramDataPos: 00000000000000000000000001000000020000000000000004000000000000000100000001000000020000000200000000000000
         paramByteDataSize: 00000000000000000000000000000000000000000400000001000000000000000000000000000000000000000000000000000000
     events:
     - name: FINISHED
@@ -14787,7 +14788,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -14805,7 +14806,7 @@ MonoBehaviour:
     handleTriggerEnter: 0
     handleTriggerExit: 0
     handleTriggerStay: 0
-    handleCollisionEnter: 1
+    handleCollisionEnter: 0
     handleCollisionExit: 0
     handleCollisionStay: 0
     handleParticleCollision: 0
@@ -15086,7 +15087,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7da3d721666f28e4bbc4eada7a38f351, type: 2}
+  - {fileID: 2100000, guid: 1b7e42310735de645b14d7c3d6528533, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
