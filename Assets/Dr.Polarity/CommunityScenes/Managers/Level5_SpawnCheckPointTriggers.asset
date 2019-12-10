@@ -32,7 +32,7 @@ MonoBehaviour:
     overridePositionType: 1
     positionType: 2
     trans: {fileID: 0}
-    worldPos: {x: 94.81512, y: -5.3977585, z: -29.456984}
+    worldPos: {x: 24.2, y: -5.3977585, z: -34.45}
     offset: {x: 0, y: 0, z: 0}
     size: {x: 1, y: 1, z: 1}
     useTransformAngle: 0
@@ -56,7 +56,7 @@ MonoBehaviour:
     overridePositionType: 1
     positionType: 2
     trans: {fileID: 0}
-    worldPos: {x: 73.00441, y: -4.722003, z: -37.366364}
+    worldPos: {x: 76.545006, y: -4.722003, z: -40.15031}
     offset: {x: 0, y: 0, z: 0}
     size: {x: 2, y: 2, z: 5}
     useTransformAngle: 0
@@ -176,9 +176,9 @@ MonoBehaviour:
     overridePositionType: 1
     positionType: 2
     trans: {fileID: 0}
-    worldPos: {x: -3.9972997, y: -4.9773207, z: 55.855446}
+    worldPos: {x: 17.0616, y: -4.918885, z: 66.2713}
     offset: {x: 0, y: 0, z: 0}
-    size: {x: 2, y: 2, z: 5}
+    size: {x: 2, y: 2, z: 2}
     useTransformAngle: 0
     angle: {x: 0, y: 0, z: 0}
     radius: 0
@@ -200,65 +200,17 @@ MonoBehaviour:
     overridePositionType: 1
     positionType: 2
     trans: {fileID: 0}
-    worldPos: {x: 24.65136, y: -4.6530848, z: 52.283302}
+    worldPos: {x: 75.14022, y: -4.918885, z: 20.241228}
     offset: {x: 0, y: 0, z: 0}
-    size: {x: 2, y: 2, z: 4}
+    size: {x: 2, y: 2, z: 2}
     useTransformAngle: 0
-    angle: {x: 0, y: 95, z: 0}
+    angle: {x: 0, y: 0, z: 0}
     radius: 0
     height: 0
     overrideColor: 0
     debugColor: {r: 1, g: 0, b: 0, a: 1}
     handlePoint: {x: 0, y: 0, z: 0}
-  - zoneName: Checkpoint 8
-    overrideZoneName: 1
-    overrideLabel: 1
-    overrideDetectMask: 1
-    detectMask:
-      serializedVersion: 2
-      m_Bits: 2048
-    ignoreTriggerColliders: 0
-    overrideDetectType: 1
-    detectType: 1
-    colliderToUse: {fileID: 0}
-    overridePositionType: 1
-    positionType: 2
-    trans: {fileID: 0}
-    worldPos: {x: 75.13134, y: -4.6530848, z: 20.241896}
-    offset: {x: 0, y: 0, z: 0}
-    size: {x: 2, y: 2, z: 4}
-    useTransformAngle: 0
-    angle: {x: 0, y: -30, z: 0}
-    radius: 0
-    height: 0
-    overrideColor: 0
-    debugColor: {r: 1, g: 0, b: 0, a: 1}
-    handlePoint: {x: 0, y: 0, z: 0}
-  - zoneName: Checkpoint 9
-    overrideZoneName: 1
-    overrideLabel: 1
-    overrideDetectMask: 1
-    detectMask:
-      serializedVersion: 2
-      m_Bits: 2048
-    ignoreTriggerColliders: 0
-    overrideDetectType: 1
-    detectType: 1
-    colliderToUse: {fileID: 0}
-    overridePositionType: 1
-    positionType: 2
-    trans: {fileID: 0}
-    worldPos: {x: 110.74837, y: -4.6530848, z: -4.005885}
-    offset: {x: 0, y: 0, z: 0}
-    size: {x: 2, y: 2, z: 4}
-    useTransformAngle: 0
-    angle: {x: 0, y: -30, z: 0}
-    radius: 0
-    height: 0
-    overrideColor: 0
-    debugColor: {r: 1, g: 0, b: 0, a: 1}
-    handlePoint: {x: 0, y: 0, z: 0}
-  playerSpawn: {fileID: 329008192852583964, guid: 93820f1943f4cfb40993761e8de937a2,
+  playerSpawn: {fileID: 329008192852583964, guid: 9c2d8dcdb43a21b44b6a68f3d38879e4,
     type: 3}
   progressOnly: 0
   saveProgressToDisc: 0

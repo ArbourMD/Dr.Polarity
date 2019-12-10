@@ -1,0 +1,222 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9d7d5147e154304991783bb09cfa737, type: 3}
+  m_Name: Level3Josh
+  m_EditorClassIdentifier: 
+  overrideCheckPoint: 0
+  checkPoint: 0
+  detectMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  checkPoints:
+  - zoneName: Checkpoint 0
+    overrideZoneName: 1
+    overrideLabel: 1
+    overrideDetectMask: 1
+    detectMask:
+      serializedVersion: 2
+      m_Bits: 2048
+    ignoreTriggerColliders: 0
+    overrideDetectType: 1
+    detectType: 1
+    colliderToUse: {fileID: 0}
+    overridePositionType: 1
+    positionType: 2
+    trans: {fileID: 0}
+    worldPos: {x: 98.84877, y: -0.118460655, z: -42.878597}
+    offset: {x: 0, y: 0, z: 0}
+    size: {x: 1, y: 1, z: 1}
+    useTransformAngle: 0
+    angle: {x: 0, y: 90, z: 0}
+    radius: 0
+    height: 0
+    overrideColor: 0
+    debugColor: {r: 1, g: 0, b: 0, a: 1}
+    handlePoint: {x: 0, y: 0, z: 0}
+  - zoneName: Checkpoint 1
+    overrideZoneName: 1
+    overrideLabel: 1
+    overrideDetectMask: 1
+    detectMask:
+      serializedVersion: 2
+      m_Bits: 2048
+    ignoreTriggerColliders: 0
+    overrideDetectType: 1
+    detectType: 1
+    colliderToUse: {fileID: 0}
+    overridePositionType: 1
+    positionType: 2
+    trans: {fileID: 0}
+    worldPos: {x: 96.38607, y: -0.796666, z: -43.16803}
+    offset: {x: 0, y: 0, z: 0}
+    size: {x: 2, y: 2, z: 2.5}
+    useTransformAngle: 0
+    angle: {x: 0, y: 50, z: 0}
+    radius: 0
+    height: 0
+    overrideColor: 0
+    debugColor: {r: 1, g: 0, b: 0, a: 1}
+    handlePoint: {x: 0, y: 0, z: 0}
+  - zoneName: Checkpoint 2
+    overrideZoneName: 1
+    overrideLabel: 1
+    overrideDetectMask: 1
+    detectMask:
+      serializedVersion: 2
+      m_Bits: 2048
+    ignoreTriggerColliders: 0
+    overrideDetectType: 1
+    detectType: 1
+    colliderToUse: {fileID: 0}
+    overridePositionType: 1
+    positionType: 2
+    trans: {fileID: 0}
+    worldPos: {x: 86.042885, y: 1.3500881, z: 37.367695}
+    offset: {x: 0, y: 0, z: 0}
+    size: {x: 2, y: 2, z: 7}
+    useTransformAngle: 0
+    angle: {x: 0, y: 35, z: 0}
+    radius: 0
+    height: 0
+    overrideColor: 0
+    debugColor: {r: 1, g: 0, b: 0, a: 1}
+    handlePoint: {x: 0, y: 0, z: 0}
+  - zoneName: Checkpoint 3
+    overrideZoneName: 1
+    overrideLabel: 1
+    overrideDetectMask: 1
+    detectMask:
+      serializedVersion: 2
+      m_Bits: 2048
+    ignoreTriggerColliders: 0
+    overrideDetectType: 1
+    detectType: 1
+    colliderToUse: {fileID: 0}
+    overridePositionType: 1
+    positionType: 2
+    trans: {fileID: 0}
+    worldPos: {x: 47.052547, y: 1.0200589, z: 36.301643}
+    offset: {x: 0, y: 0, z: 0}
+    size: {x: 2, y: 2, z: 6}
+    useTransformAngle: 0
+    angle: {x: 0, y: 120, z: 0}
+    radius: 0
+    height: 0
+    overrideColor: 0
+    debugColor: {r: 1, g: 0, b: 0, a: 1}
+    handlePoint: {x: 0, y: 0, z: 0}
+  - zoneName: Checkpoint 4
+    overrideZoneName: 1
+    overrideLabel: 1
+    overrideDetectMask: 1
+    detectMask:
+      serializedVersion: 2
+      m_Bits: 2048
+    ignoreTriggerColliders: 0
+    overrideDetectType: 1
+    detectType: 1
+    colliderToUse: {fileID: 0}
+    overridePositionType: 1
+    positionType: 2
+    trans: {fileID: 0}
+    worldPos: {x: 4.818304, y: 4.8088093, z: 18.715496}
+    offset: {x: 0, y: 0, z: 0}
+    size: {x: 2, y: 2, z: 4}
+    useTransformAngle: 0
+    angle: {x: 0, y: 145, z: 0}
+    radius: 0
+    height: 0
+    overrideColor: 0
+    debugColor: {r: 1, g: 0, b: 0, a: 1}
+    handlePoint: {x: 0, y: 0, z: 0}
+  - zoneName: Checkpoint 5
+    overrideZoneName: 1
+    overrideLabel: 1
+    overrideDetectMask: 1
+    detectMask:
+      serializedVersion: 2
+      m_Bits: 2048
+    ignoreTriggerColliders: 0
+    overrideDetectType: 1
+    detectType: 1
+    colliderToUse: {fileID: 0}
+    overridePositionType: 1
+    positionType: 2
+    trans: {fileID: 0}
+    worldPos: {x: 43.725426, y: 12.273742, z: -4.3292274}
+    offset: {x: 0, y: 0, z: 0}
+    size: {x: 2, y: 2, z: 3.5}
+    useTransformAngle: 0
+    angle: {x: 0, y: 70, z: 0}
+    radius: 0
+    height: 0
+    overrideColor: 0
+    debugColor: {r: 1, g: 0, b: 0, a: 1}
+    handlePoint: {x: 0, y: 0, z: 0}
+  - zoneName: Checkpoint 6
+    overrideZoneName: 1
+    overrideLabel: 1
+    overrideDetectMask: 1
+    detectMask:
+      serializedVersion: 2
+      m_Bits: 2048
+    ignoreTriggerColliders: 0
+    overrideDetectType: 1
+    detectType: 1
+    colliderToUse: {fileID: 0}
+    overridePositionType: 1
+    positionType: 2
+    trans: {fileID: 0}
+    worldPos: {x: 46.523895, y: 10.333068, z: -50.218292}
+    offset: {x: 0, y: 0, z: 0}
+    size: {x: 2, y: 2, z: 2.5}
+    useTransformAngle: 0
+    angle: {x: 0, y: 0, z: 0}
+    radius: 0
+    height: 0
+    overrideColor: 0
+    debugColor: {r: 1, g: 0, b: 0, a: 1}
+    handlePoint: {x: 0, y: 0, z: 0}
+  - zoneName: Checkpoint 7
+    overrideZoneName: 1
+    overrideLabel: 1
+    overrideDetectMask: 1
+    detectMask:
+      serializedVersion: 2
+      m_Bits: 2048
+    ignoreTriggerColliders: 0
+    overrideDetectType: 1
+    detectType: 1
+    colliderToUse: {fileID: 0}
+    overridePositionType: 1
+    positionType: 2
+    trans: {fileID: 0}
+    worldPos: {x: 96.53955, y: -1.1257734, z: -48.199272}
+    offset: {x: 0, y: 0, z: 0}
+    size: {x: 2, y: 2, z: 2.5}
+    useTransformAngle: 0
+    angle: {x: 0, y: 0, z: 0}
+    radius: 0
+    height: 0
+    overrideColor: 0
+    debugColor: {r: 1, g: 0, b: 0, a: 1}
+    handlePoint: {x: 0, y: 0, z: 0}
+  playerSpawn: {fileID: 329008192852583964, guid: 93820f1943f4cfb40993761e8de937a2,
+    type: 3}
+  progressOnly: 0
+  saveProgressToDisc: 0
+  resetProgressOnQuit: 0
+  sceneUnlocked: 0
+  nextSceneToPlay: Level4Curve
+  freezeGame: 0
+  freezePlayer: 0
+  endTime: 1
