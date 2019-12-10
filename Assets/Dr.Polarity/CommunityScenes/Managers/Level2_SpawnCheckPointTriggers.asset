@@ -32,7 +32,7 @@ MonoBehaviour:
     overridePositionType: 1
     positionType: 2
     trans: {fileID: 0}
-    worldPos: {x: -44.71581, y: 0.5587692, z: 21.778492}
+    worldPos: {x: -42.138973, y: 0.5587692, z: 16.55243}
     offset: {x: 0, y: 0, z: 0}
     size: {x: 1, y: 1, z: 1}
     useTransformAngle: 0
@@ -177,30 +177,6 @@ MonoBehaviour:
     positionType: 2
     trans: {fileID: 0}
     worldPos: {x: -43.126926, y: 1.2610314, z: -11.145531}
-    offset: {x: 0, y: 0, z: 0}
-    size: {x: 2, y: 2, z: 2.5}
-    useTransformAngle: 0
-    angle: {x: 0, y: 0, z: 0}
-    radius: 0
-    height: 0
-    overrideColor: 0
-    debugColor: {r: 1, g: 0, b: 0, a: 1}
-    handlePoint: {x: 0, y: 0, z: 0}
-  - zoneName: Checkpoint 7
-    overrideZoneName: 1
-    overrideLabel: 1
-    overrideDetectMask: 1
-    detectMask:
-      serializedVersion: 2
-      m_Bits: 2048
-    ignoreTriggerColliders: 0
-    overrideDetectType: 1
-    detectType: 1
-    colliderToUse: {fileID: 0}
-    overridePositionType: 1
-    positionType: 2
-    trans: {fileID: 0}
-    worldPos: {x: -55.814083, y: 1.2610314, z: 12.32691}
     offset: {x: 0, y: 0, z: 0}
     size: {x: 2, y: 2, z: 2.5}
     useTransformAngle: 0
