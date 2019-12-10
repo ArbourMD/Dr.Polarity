@@ -179,6 +179,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7029286050246556054}
     m_Modifications:
+    - target: {fileID: 5019491416543928928, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
+        type: 3}
+      propertyPath: m_Name
+      value: 'WallMagnetic '
+      objectReference: {fileID: 0}
     - target: {fileID: 5019491416543928927, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -249,11 +254,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5314341
       objectReference: {fileID: 0}
-    - target: {fileID: 5019491416543928928, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
-        type: 3}
-      propertyPath: m_Name
-      value: 'WallMagnetic '
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d, type: 3}
 --- !u!4 &2851746717574963010 stripped
@@ -269,6 +269,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7029286050246556054}
     m_Modifications:
+    - target: {fileID: 5019491416543928928, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
+        type: 3}
+      propertyPath: m_Name
+      value: WallMagnetic (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 5019491416543928927, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -339,11 +344,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.53143406
       objectReference: {fileID: 0}
-    - target: {fileID: 5019491416543928928, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
-        type: 3}
-      propertyPath: m_Name
-      value: WallMagnetic (3)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d, type: 3}
 --- !u!4 &2851746718184068860 stripped
@@ -359,6 +359,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7029286050246556054}
     m_Modifications:
+    - target: {fileID: 5019491416543928928, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
+        type: 3}
+      propertyPath: m_Name
+      value: WallMagnetic (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 5019491416543928927, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -429,11 +434,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5314345
       objectReference: {fileID: 0}
-    - target: {fileID: 5019491416543928928, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
-        type: 3}
-      propertyPath: m_Name
-      value: WallMagnetic (2)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d, type: 3}
 --- !u!4 &2851746716669086139 stripped
@@ -449,6 +449,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7029286050246556054}
     m_Modifications:
+    - target: {fileID: 5019491416543928928, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
+        type: 3}
+      propertyPath: m_Name
+      value: WallMagnetic (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 5019491416543928927, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -518,11 +523,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.53143424
-      objectReference: {fileID: 0}
-    - target: {fileID: 5019491416543928928, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d,
-        type: 3}
-      propertyPath: m_Name
-      value: WallMagnetic (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c0e2ffe6a3af2e4d8c907e21dcfe28d, type: 3}

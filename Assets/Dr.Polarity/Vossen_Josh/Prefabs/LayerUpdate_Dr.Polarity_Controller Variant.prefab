@@ -153,7 +153,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -187,7 +187,7 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
+  eventHandlerComponentsAdded: 1
 --- !u!1001 &7478504817621389022
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -198,7 +198,7 @@ PrefabInstance:
     - target: {fileID: 329008192852583964, guid: 9c2d8dcdb43a21b44b6a68f3d38879e4,
         type: 3}
       propertyPath: m_Name
-      value: LayerUpdate_Dr.Polarity_Controller
+      value: LayerUpdate_Dr.Polarity_Controller Variant
       objectReference: {fileID: 0}
     - target: {fileID: 329008192852583964, guid: 9c2d8dcdb43a21b44b6a68f3d38879e4,
         type: 3}
@@ -305,16 +305,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6329932804450205648, guid: 9c2d8dcdb43a21b44b6a68f3d38879e4,
-        type: 3}
-      propertyPath: fsm.name
-      value: GetPlayer
-      objectReference: {fileID: 0}
-    - target: {fileID: 6329932804450205648, guid: 9c2d8dcdb43a21b44b6a68f3d38879e4,
-        type: 3}
-      propertyPath: fsm.preprocessed
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8510945227847488383, guid: 9c2d8dcdb43a21b44b6a68f3d38879e4,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -358,6 +348,16 @@ PrefabInstance:
     - target: {fileID: 2858121200509990393, guid: 9c2d8dcdb43a21b44b6a68f3d38879e4,
         type: 3}
       propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6329932804450205648, guid: 9c2d8dcdb43a21b44b6a68f3d38879e4,
+        type: 3}
+      propertyPath: fsm.name
+      value: GetPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6329932804450205648, guid: 9c2d8dcdb43a21b44b6a68f3d38879e4,
+        type: 3}
+      propertyPath: fsm.preprocessed
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
