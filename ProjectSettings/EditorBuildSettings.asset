@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Dr.Polarity/Rich_Ryan/UI/MenuScenes/MainMenu.unity
+    guid: 70b1ed0ef7ffc7e4ab6528755a9bb9f2
+  - enabled: 1
     path: Assets/Dr.Polarity/Rich_Ryan/UI/MenuScenes/LevelSelect.unity
     guid: 8daac76cb1da5004abe70557fcdde1d2
   - enabled: 1

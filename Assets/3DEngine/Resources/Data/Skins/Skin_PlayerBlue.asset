@@ -93,7 +93,7 @@ MonoBehaviour:
     - masterInd: 1
       valueInd: 1
   setSkin: 1
-  skinPrefab: {fileID: 860738476402266513, guid: 55d43a84c4752b04fa5534a7abbec456,
+  skinPrefab: {fileID: 8867900586416682537, guid: 1d16e640c224f034685c1a20e2a6753a,
     type: 3}
   skinSize: {x: 1, y: 2}
   skinRotation: {x: 0, y: 0, z: 0}
@@ -101,12 +101,14 @@ MonoBehaviour:
   itemSpawnLocations:
   - overridePropertyName: RightHand
     overrideParent: 1
-    parent: {fileID: 860738476402266513, guid: 55d43a84c4752b04fa5534a7abbec456, type: 3}
+    parent: {fileID: 8867900586416682537, guid: 1d16e640c224f034685c1a20e2a6753a,
+      type: 3}
     stringValue: Bip001 L Finger22
     indexValue: 33
   - overridePropertyName: AmmoPouche
     overrideParent: 1
-    parent: {fileID: 860738476402266513, guid: 55d43a84c4752b04fa5534a7abbec456, type: 3}
+    parent: {fileID: 8867900586416682537, guid: 1d16e640c224f034685c1a20e2a6753a,
+      type: 3}
     stringValue: Bip001 L Toe0
     indexValue: 8
   weight: 1
